@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT GARUD : COGNITIVE INTERFACE</title>
+    <style>
+        body { margin: 0; background-color: #020208; color: #00f0ff; font-family: 'Courier New', monospace; overflow: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; }
+        #canvas { position: absolute; z-index: 1; top:0; left:0; }
+        .ui-overlay { position: absolute; z-index: 2; text-align: center; pointer-events: none; text-shadow: 0 0 10px #00f0ff; top: 15%; }
+        h1 { font-size: 1.5rem; letter-spacing: 4px; margin-bottom: 5px; }
+        .status-text { font-size: 0.8rem; color: #00aa33; font-weight: bold; margin-top: 10px; }
+        .terminal-log { position: absolute; z-index: 3; bottom: 25%; color: #00ff00; font-size: 0.9rem; text-shadow: 0 0 5px #00ff00; text-align: center; width: 85%; max-width: 450px; }
+        .mic-btn { position: absolute; z-index: 3; bottom: 10%; background: rgba(0,240,255,0.1); border: 2px solid #00f0ff; color: #00f0ff; padding: 15px 40px; cursor: pointer; font-size: 1rem; font-weight: bold; font-family: 'Courier New', monospace; box-shadow: 0 0 15px rgba(0,240,255,0.3); border-radius: 50px; text-transform: uppercase; transition: 0.3s; }
+        .mic-btn:hover { background: #00f0ff; color: #020208; box-shadow: 0 0 20px #00f0ff; }
+    </style>
+</head>
+<body>
+
+    <div class="ui-overlay">
+        <h1>PROJECT GARUD</h1>
+        <div class="status-text" id="statusLine">SYSTEM NOMINAL : CORE ONLINE</div>
+    </div>
+
+    <div class="terminal-log" id="logBox">TAP BUTTON TO ENGAGE VOICE CHANNEL</div>
+    <button class="mic-btn" id="micBtn">TAP TO TALK</button>
+
+    <canvas id="canvas"></canvas>
+
+    <script>
+        const canvas = document.getElementById('canvas'); const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+        let particles = []; const numParticles = 140; const radius = 120;
+        for(let i=0; i<numParticles; i++) {
+            let angle = (i / numParticles) * Math.PI * 2;
+            particles.push({ baseAngle: angle, angle: angle, speed: 0.005 + Math.random() * 0.004, size: 2 + Math.random() * 2 });
+        }
+
+        window.isSpeaking = false; window.isListening = false;
+        const micBtn = document.getElementById('micBtn'); const logBox = document.getElementById('logBox'); const statusLine = document.getElementById('statusLine');
+
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (!SpeechRecognition) {
+            alert("Speech recognition not supported.");
+        } else {
+            const recognition = new SpeechRecognition();
+            recognition.lang = 'en-US'; recognition.interimResults = false;
+
+            micBtn.addEventListener('click', () => { if(window.isSpeaking) return; recognition.start(); });
+
+            recognition.onstart = () => {
+                window.isListening = true; statusLine.innerText = "GARUD CORE: LISTENING..."; statusLine.style.color = "#ffcc00"; logBox.innerText = "Speak now, Commander...";
+            };
+            recognition.onerror = () => {
+                window.isListening = false; statusLine.innerText = "SYSTEM NOMINAL : CORE ONLINE"; statusLine.style.color = "#00aa33"; logBox.innerText = "Error capturing frequencies.";
+            };
+            recognition.onresult = async (event) => {
+                window.isListening = false; const userSpeech = event.results[0][0].transcript;
+                logBox.innerText = `YOU: "${userSpeech}"`; statusLine.innerText = "GARUD CORE: PROCESSING MATRIX..."; statusLine.style.color = "#00f0ff";
+
+                const response = await fetch('/speak', {
+                    method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ text: userSpeech })
+                });
+
+                if(response.ok) {
+                    const garudText = response.headers.get('X-Garud-Response') || "Audio Transmitted";
+                    logBox.innerHTML = `YOU: "${userSpeech}"<br><span style="color:#00f0ff">GARUD: "${garudText}"</span>`;
+                    const blob = await response.blob(); const audioUrl = URL.createObjectURL(blob); const audio = new Audio(audioUrl);
+                    audio.onplay = () => { window.isSpeaking = true; statusLine.innerText = "GARUD CORE: TRANSMITTING AUDIO..."; statusLine.style.color = "#00f0ff"; };
+                    audio.onended = () => { window.isSpeaking = false; statusLine.innerText = "SYSTEM NOMINAL : CORE ONLINE"; statusLine.style.color = "#00aa33"; };
+                    audio.play();
+                } else { 
+                    logBox.innerText = "Voice file missing in server folder."; 
+                    statusLine.innerText = "SYSTEM NOMINAL : CORE ONLINE"; 
+                    statusLine.style.color = "#00aa33"; 
+                }
+            };
+        }
+
+        function animate() {
+            requestAnimationFrame(animate); ctx.fillStyle = 'rgba(2, 2, 8, 0.2)'; ctx.fillRect(0, 0, canvas.width, canvas.height);
+            const centerX = canvas.width / 2; const centerY = canvas.height / 2;
+            let pulse = 0; if (window.isSpeaking) pulse = Math.sin(Date.now() * 0.06) * 18 + 12; if (window.isListening) pulse = Math.sin(Date.now() * 0.02) * 5 + 3;
+            const currentRadius = radius + pulse;
+            ctx.beginPath(); ctx.arc(centerX, centerY, currentRadius + 25, 0, Math.PI * 2);
+            ctx.strokeStyle = window.isSpeaking ? 'rgba(0, 240, 255, 0.7)' : (window.isListening ? 'rgba(255, 200, 0, 0.5)' : 'rgba(0, 240, 255, 0.1)'); ctx.lineWidth = 2; ctx.stroke();
+            particles.forEach((p) => {
+                p.angle += p.speed; let modRadius = currentRadius + (Math.sin(p.angle * 5) * (pulse * 0.5));
+                let x = centerX + Math.cos(p.angle) * modRadius; let y = centerY + Math.sin(p.angle) * modRadius;
+                ctx.beginPath(); ctx.arc(x, y, p.size + (pulse/8), 0, Math.PI * 2); ctx.fillStyle = window.isListening ? '#ffcc00' : '#00f0ff';
+                ctx.shadowBlur = (window.isSpeaking || window.isListening) ? 22 : 8; ctx.shadowColor = window.isListening ? '#ffcc00' : '#00f0ff'; ctx.fill();
+            });
+            ctx.shadowBlur = 0;
+        }
+        animate();
+        window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
+    </script>
+</body>
+</html>

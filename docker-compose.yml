@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  # Layer 1: बाहरी सुरक्षा कवच (Perimeter Shield) जो सीधे Port 80 पर बैठेगा
+  garud-perimeter:
+    build:
+      context: .
+      dockerfile: perimeter/Dockerfile
+    container_name: garud-perimeter
+    ports:
+      - "80:80"  # बाहर की दुनिया के लिए सिर्फ यही खुला रहेगा
+    env_file:
+      - .env     # यह तिजोरी से टेलीग्राम टोकन अपने आप लोड कर लेगा
+    networks:
+      - garud-private-net
+    depends_on:
+      - garud-shield
+    restart: always
+
+  # Layer 2: तुम्हारा भीतरी कोर (Garud Shield) जो बाहर से पूरी तरह छुप जाएगा
+  garud-shield:
+    build: .
+    container_name: garud-shield
+    # ध्यान दो भाई, यहाँ कोई "ports" ओपन नहीं है, बाहर से इस पर कोई अटैक नहीं कर सकता!
+    env_file:
+      - .env
+    networks:
+      - garud-private-net
+    restart: always
+
+networks:
+  garud-private-net: # यह वो अंदरूनी फ्री खुफिया रास्ता है जो दोनों लेयर्स को जोड़ेगा
+    driver: bridge

