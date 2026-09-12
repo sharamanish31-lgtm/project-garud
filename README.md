@@ -19,6 +19,35 @@ Internet → garud-perimeter (Reverse Proxy) → garud-shield (Flask + Gunicorn)
 ## Tech Stack
 Python, Flask, Gunicorn, Docker, AWS EC2, Telegram Bot API, Linux/Ubuntu
 ## Live Stats
+## Screenshots
+
+**Live attack alerts (Telegram):**
+
+
+![Telegram Alert 1](telegram_alert.png)
+
+
+
+
+![Telegram Alert 2](telegram_alert..png)
+
+
+
+
+![Telegram Alert 3](telegram_alert_.png)
+
+
+
+**Container health check:**
+
+
+![Docker Status](docker_status.png)
+
+
+
+**Watchdog schedule:**
+
+
 
 In production since May 2026 — has detected and blocked 400+ real-world attack attempts, including path traversal and credential-harvesting scans targeting .env, SendGrid, and Twilio keys.
 ## Challenges Solved
