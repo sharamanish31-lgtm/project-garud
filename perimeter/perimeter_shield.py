@@ -68,8 +68,8 @@ def send_telegram(msg):
     try:
         url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage?chat_id={TELEGRAM_CHAT_ID}&text={urllib.parse.quote(msg)}&parse_mode=Markdown"
         urllib.request.urlopen(url, timeout=2)
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"TELEGRAM ERROR: {e}")
 
 class PerimeterHandler(http.server.BaseHTTPRequestHandler):
     def log_message(self, format, *args):

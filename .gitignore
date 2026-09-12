@@ -5,3 +5,13 @@ __pycache__/
 *.pyc
 *.log
 *.save
+.env
+*.pem
+*.key
+banned_ips.json
+*.log
+__pycache__/
+*.backup
+*.save
+*.save.*
+perimeter/logs/*.jsonl
