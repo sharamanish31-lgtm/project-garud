@@ -1,0 +1,20 @@
+services:
+  garud-perimeter:
+    environment:
+      TARGET_INTERNAL_APP: http://garud-shield:8080
+      PINECONE_API_KEY: ""
+      TELEGRAM_BOT_TOKEN: ""
+      TELEGRAM_CHAT_ID: ""
+
+  garud-shield:
+    environment:
+      PINECONE_API_KEY: ""
+      TELEGRAM_BOT_TOKEN: ""
+      TELEGRAM_CHAT_ID: ""
+    command:
+      - gunicorn
+      - --workers
+      - "2"
+      - --bind
+      - 0.0.0.0:8080
+      - garud_web:app

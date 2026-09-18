@@ -1,0 +1,61 @@
+name: Garud CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Garud
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest requests
+
+      - name: Create CI environment
+        run: |
+          touch .env
+
+      - name: Build Garud containers
+        run: |
+          docker compose -f docker-compose.yml -f docker-compose.ci.yml build
+
+      - name: Start Garud
+        run: |
+          docker compose -f docker-compose.yml -f docker-compose.ci.yml up -d
+
+      - name: Wait for Garud
+        run: |
+          sleep 10
+
+      - name: Show container status
+        run: |
+          docker compose -f docker-compose.yml -f docker-compose.ci.yml ps
+
+      - name: Run Garud tests
+        run: |
+          pytest test_app.py
+
+      - name: Show logs on failure
+        if: failure()
+        run: |
+          docker compose -f docker-compose.yml -f docker-compose.ci.yml logs
+
+      - name: Stop Garud
+        if: always()
+        run: |
+          docker compose -f docker-compose.yml -f docker-compose.ci.yml down
