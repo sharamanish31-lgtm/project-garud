@@ -1,5 +1,8 @@
 services:
   garud-perimeter:
+    build:
+      context: ./perimeter
+      dockerfile: Dockerfile
     environment:
       TARGET_INTERNAL_APP: http://garud-shield:8080
       PINECONE_API_KEY: ""
