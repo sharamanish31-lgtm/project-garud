@@ -117,11 +117,16 @@ class PerimeterHandler(http.server.BaseHTTPRequestHandler):
             body = self.rfile.read(content_length) if content_length > 0 else None
             req = urllib.request.Request(f"{TARGET_INTERNAL_APP}{path}", data=body, headers=self.headers, method=self.command)
             with urllib.request.urlopen(req) as response:
+                body = response.read()
                 self.send_response(response.status)
+
                 for key, val in response.headers.items():
-                    self.send_header(key, val)
+                    if key.lower() not in ("transfer-encoding", "content-length", "connection"):
+                        self.send_header(key, val)
+
+                self.send_header("Content-Length", str(len(body)))
                 self.end_headers()
-                self.wfile.write(response.read())
+                self.wfile.write(body)
             log_event(client_ip, path, "allowed")
         except Exception as e:
             log_event(client_ip, path, "backend_error", {"error": str(e)})

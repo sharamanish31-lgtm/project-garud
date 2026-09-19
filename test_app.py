@@ -1,7 +1,8 @@
+import os
 import pytest
 import requests
 
-BASE_URL = "http://127.0.0.1:80"
+BASE_URL = os.getenv("BASE_URL", "http://127.0.0.1:80")
 
 def test_home_route_integrity():
     """Verifies public root is operational internally"""
