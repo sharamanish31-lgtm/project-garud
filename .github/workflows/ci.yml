@@ -49,6 +49,7 @@ jobs:
               echo "Garud is ready"
               exit 0
             fi
+
             echo "Waiting for Garud... attempt $i/30"
             sleep 2
           done
@@ -69,6 +70,25 @@ jobs:
       - name: Run Garud tests
         run: |
           pytest -vv -s test_app.py
+
+      - name: Install Trivy
+        uses: aquasecurity/setup-trivy@v0.2.3
+
+      - name: Scan Garud perimeter image
+        run: |
+          trivy image \
+            --severity HIGH,CRITICAL \
+            --ignore-unfixed \
+            --exit-code 0 \
+            garud-perimeter
+
+      - name: Scan Garud shield image
+        run: |
+          trivy image \
+            --severity HIGH,CRITICAL \
+            --ignore-unfixed \
+            --exit-code 0 \
+            garud-shield
 
       - name: Show logs on failure
         if: failure()
