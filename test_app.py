@@ -9,9 +9,9 @@ def test_home_route_integrity():
     response = requests.get(f"{BASE_URL}/")
     assert response.status_code == 200
 
-def test_jarvis_dashboard_availability():
+def test_garud_dashboard_availability():
     """Ensures UI canvas dashboard answers properly inside network"""
-    response = requests.get(f"{BASE_URL}/jarvis")
+    response = requests.get(f"{BASE_URL}/garud")
     assert response.status_code == 200
 
 def test_circuit_breaker_rate_limiting():

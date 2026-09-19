@@ -94,8 +94,8 @@ jobs:
           echo "Testing home..."
           curl -i http://127.0.0.1:80/
 
-          echo "Testing Jarvis..."
-          curl -i http://127.0.0.1:80/jarvis
+          echo "Testing Garud..."
+          curl -i http://127.0.0.1:80/garud
 
       - name: Run Garud tests
         run: |

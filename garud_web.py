@@ -20,7 +20,7 @@ INTERACTIVE_DECISION_MAP = {}  # Dynamic telemetry control block
 
 PINECONE_KEY = os.getenv("PINECONE_API_KEY")
 pc = Pinecone(api_key=PINECONE_KEY) if PINECONE_KEY else None
-VOICE_FOLDER = os.path.expanduser("~/garud_core/my_voices")
+VOICE_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), "my_voices")
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
@@ -141,9 +141,9 @@ def telegram_webhook_callback():
 def home():
     return render_template('index.html')
 
-@app.route('/jarvis')
-def jarvis_dashboard():
-    return render_template('jarvis.html')
+@app.route('/garud')
+def garud_dashboard():
+    return render_template('garud.html')
 
 @app.route('/speak', methods=['POST'])
 def speak():
