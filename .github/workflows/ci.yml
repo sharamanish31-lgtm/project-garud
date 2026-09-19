@@ -38,12 +38,29 @@ jobs:
         run: |
           docker images
 
-      # सुधार: अगर आपको Trivy के लिए अलग से टैग या ID चाहिए, तो यह सुरक्षित तरीका है।
-      # अगर इसकी ज़रूरत नहीं है, तो आप इस पूरे step को हटा भी सकते हैं।
       - name: Tag Garud images for Trivy
         run: |
-          echo "Checking built images..."
-          docker images --format "{{.Repository}}:{{.Tag}}"
+          set -e
+          for svc in perimeter shield; do
+            IMG=$(docker images --format '{{.Repository}}:{{.Tag}}' \
+              | grep -i "$svc" | grep -v '^garud-' | head -n1 || true)
+
+            if [ -z "$IMG" ]; then
+              # already named garud-<svc>:latest ho to theek hai
+              if docker image inspect "garud-$svc:latest" > /dev/null 2>&1; then
+                echo "garud-$svc:latest already exists"
+                continue
+              fi
+              echo "ERROR: image for '$svc' not found"
+              docker images
+              exit 1
+            fi
+
+            echo "Tagging $IMG -> garud-$svc:latest"
+            docker tag "$IMG" "garud-$svc:latest"
+          done
+
+          docker images | grep garud-
 
       - name: Start Garud
         run: |
@@ -86,16 +103,22 @@ jobs:
 
       - name: Scan Garud perimeter image
         uses: aquasecurity/trivy-action@v0.36.0
+        env:
+          TRIVY_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-db:2
+          TRIVY_JAVA_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-java-db:1
         with:
-          image-ref: 'garud-perimeter:latest' # सुनिश्चित करें कि टैग सही है
+          image-ref: 'garud-perimeter:latest'
           severity: 'HIGH,CRITICAL'
           ignore-unfixed: true
           exit-code: '0'
 
       - name: Scan Garud shield image
         uses: aquasecurity/trivy-action@v0.36.0
+        env:
+          TRIVY_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-db:2
+          TRIVY_JAVA_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-java-db:1
         with:
-          image-ref: 'garud-shield:latest' # सुनिश्चित करें कि टैग सही है
+          image-ref: 'garud-shield:latest'
           severity: 'HIGH,CRITICAL'
           ignore-unfixed: true
           exit-code: '0'
