@@ -39,8 +39,9 @@ jobs:
               "echo === Saving current images for rollback ===",
               "docker tag garud-perimeter:latest garud-perimeter:rollback || true",
               "docker tag garud-shield:latest garud-shield:rollback || true",
-              "echo === Building new images ===",
-              "docker build -t garud-perimeter:latest -f perimeter/Dockerfile .",
+              "echo === Building new perimeter image ===",
+              "docker build -t garud-perimeter:latest ./perimeter",
+              "echo === Building new shield image ===",
               "docker build -t garud-shield:latest .",
               "echo === Stopping old containers ===",
               "docker rm -f garud-perimeter 2>/dev/null || true",
@@ -78,11 +79,13 @@ jobs:
                 ;;
               Failed|Cancelled|TimedOut|Cancelling)
                 echo "Garud deployment failed."
+
                 aws ssm get-command-invocation \
                   --command-id "$COMMAND_ID" \
                   --instance-id "$INSTANCE_ID" \
                   --query '{Status:Status,Output:StandardOutputContent,Error:StandardErrorContent}' \
                   --output yaml
+
                 exit 1
                 ;;
             esac
