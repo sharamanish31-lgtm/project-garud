@@ -18,9 +18,82 @@ jobs:
           host: ${{ secrets.GARUD_HOST }}
           username: ${{ secrets.GARUD_USER }}
           key: ${{ secrets.GARUD_CD_KEY }}
+          script_stop: true
+
           script: |
+            set -e
+
             cd ~/garud_core
+
+            echo "=== Pull latest code ==="
             git pull origin main
-            docker compose build
-            docker compose up -d
-            docker compose ps
+
+            echo "=== Saving current images for rollback ==="
+            docker tag garud-perimeter:latest garud-perimeter:rollback || true
+            docker tag garud-shield:latest garud-shield:rollback || true
+
+            echo "=== Building new images ==="
+            docker build -t garud-perimeter:latest -f perimeter/Dockerfile .
+            docker build -t garud-shield:latest .
+
+            rollback() {
+              echo "=== DEPLOYMENT FAILED: ROLLING BACK ==="
+
+              docker rm -f garud-perimeter 2>/dev/null || true
+              docker rm -f garud-shield 2>/dev/null || true
+
+              docker run -d \
+                --name garud-shield \
+                --network host \
+                --env-file ~/garud_core/.env \
+                -v ~/garud_core/templates:/app/templates \
+                --restart no \
+                garud-shield:rollback \
+                gunicorn --workers 3 --bind 127.0.0.1:8080 garud_web:app
+
+              docker run -d \
+                --name garud-perimeter \
+                --network host \
+                --env-file ~/garud_core/.env \
+                --restart always \
+                garud-perimeter:rollback \
+                python perimeter_shield.py
+
+              echo "=== Rollback completed ==="
+            }
+
+            trap rollback ERR
+
+            echo "=== Stopping old containers ==="
+            docker rm -f garud-perimeter 2>/dev/null || true
+            docker rm -f garud-shield 2>/dev/null || true
+
+            echo "=== Starting new shield ==="
+            docker run -d \
+              --name garud-shield \
+              --network host \
+              --env-file ~/garud_core/.env \
+              -v ~/garud_core/templates:/app/templates \
+              --restart no \
+              garud-shield:latest \
+              gunicorn --workers 3 --bind 127.0.0.1:8080 garud_web:app
+
+            echo "=== Starting new perimeter ==="
+            docker run -d \
+              --name garud-perimeter \
+              --network host \
+              --env-file ~/garud_core/.env \
+              --restart always \
+              garud-perimeter:latest \
+              python perimeter_shield.py
+
+            echo "=== Waiting for application ==="
+            sleep 5
+
+            echo "=== Health check ==="
+            curl -f http://127.0.0.1/ 
+
+            trap - ERR
+
+            echo "=== Deployment successful ==="
+            docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}'
