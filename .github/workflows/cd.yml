@@ -1,1 +1,26 @@
+name: Garud CD
 
+on:
+  workflow_run:
+    workflows: ["Garud CI"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy Garud to EC2
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.GARUD_HOST }}
+          username: ${{ secrets.GARUD_USER }}
+          key: ${{ secrets.GARUD_CD_KEY }}
+          script: |
+            cd ~/garud_core
+            git pull origin main
+            docker compose build
+            docker compose up -d
+            docker compose ps
