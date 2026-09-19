@@ -55,8 +55,10 @@ jobs:
           done
 
           echo "Garud did not become ready"
+
           docker compose -f docker-compose.yml -f docker-compose.ci.yml ps
           docker compose -f docker-compose.yml -f docker-compose.ci.yml logs
+
           exit 1
 
       - name: Test HTTP endpoints
@@ -71,24 +73,21 @@ jobs:
         run: |
           pytest -vv -s test_app.py
 
-      - name: Install Trivy
-        uses: aquasecurity/trivy-action@0.33.1
-
       - name: Scan Garud perimeter image
-        run: |
-          trivy image \
-            --severity HIGH,CRITICAL \
-            --ignore-unfixed \
-            --exit-code 0 \
-            garud-perimeter
+        uses: aquasecurity/trivy-action@v0.36.0
+        with:
+          image-ref: 'garud-perimeter'
+          severity: 'HIGH,CRITICAL'
+          ignore-unfixed: true
+          exit-code: '0'
 
       - name: Scan Garud shield image
-        run: |
-          trivy image \
-            --severity HIGH,CRITICAL \
-            --ignore-unfixed \
-            --exit-code 0 \
-            garud-shield
+        uses: aquasecurity/trivy-action@v0.36.0
+        with:
+          image-ref: 'garud-shield'
+          severity: 'HIGH,CRITICAL'
+          ignore-unfixed: true
+          exit-code: '0'
 
       - name: Show logs on failure
         if: failure()
