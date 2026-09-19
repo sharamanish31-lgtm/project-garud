@@ -34,9 +34,22 @@ jobs:
         run: |
           docker compose -f docker-compose.yml -f docker-compose.ci.yml build
 
-      - name: Show Docker images
+      - name: Tag Garud images for Trivy
         run: |
-          docker images
+          PERIMETER_IMAGE=$(docker compose -f docker-compose.yml -f docker-compose.ci.yml images -q garud-perimeter)
+          SHIELD_IMAGE=$(docker compose -f docker-compose.yml -f docker-compose.ci.yml images -q garud-shield)
+
+          echo "Perimeter image ID: $PERIMETER_IMAGE"
+          echo "Shield image ID: $SHIELD_IMAGE"
+
+          test -n "$PERIMETER_IMAGE"
+          test -n "$SHIELD_IMAGE"
+
+          docker tag "$PERIMETER_IMAGE" garud-perimeter:latest
+          docker tag "$SHIELD_IMAGE" garud-shield:latest
+
+          echo "===== Docker images for Trivy ====="
+          docker images | grep -E 'garud-perimeter|garud-shield'
 
       - name: Start Garud
         run: |
@@ -80,7 +93,7 @@ jobs:
       - name: Scan Garud perimeter image
         uses: aquasecurity/trivy-action@v0.36.0
         with:
-          image-ref: 'garud-perimeter'
+          image-ref: 'garud-perimeter:latest'
           severity: 'HIGH,CRITICAL'
           ignore-unfixed: true
           exit-code: '0'
@@ -88,10 +101,11 @@ jobs:
       - name: Scan Garud shield image
         uses: aquasecurity/trivy-action@v0.36.0
         with:
-          image-ref: 'garud-shield'
+          image-ref: 'garud-shield:latest'
           severity: 'HIGH,CRITICAL'
           ignore-unfixed: true
           exit-code: '0'
+          skip-setup-trivy: true
 
       - name: Show logs on failure
         if: failure()
