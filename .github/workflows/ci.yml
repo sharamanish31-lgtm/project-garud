@@ -38,22 +38,46 @@ jobs:
         run: |
           docker compose -f docker-compose.yml -f docker-compose.ci.yml up -d
 
-      - name: Wait for Garud
-        run: |
-          sleep 10
-
       - name: Show container status
         run: |
           docker compose -f docker-compose.yml -f docker-compose.ci.yml ps
 
+      - name: Wait for Garud
+        run: |
+          for i in {1..30}; do
+            if curl -fsS http://127.0.0.1:80/ > /dev/null; then
+              echo "Garud is ready"
+              exit 0
+            fi
+            echo "Waiting for Garud... attempt $i/30"
+            sleep 2
+          done
+
+          echo "Garud did not become ready"
+          docker compose -f docker-compose.yml -f docker-compose.ci.yml ps
+          docker compose -f docker-compose.yml -f docker-compose.ci.yml logs
+          exit 1
+
+      - name: Test HTTP endpoints
+        run: |
+          echo "Testing home..."
+          curl -i http://127.0.0.1:80/
+
+          echo "Testing Jarvis..."
+          curl -i http://127.0.0.1:80/jarvis
+
       - name: Run Garud tests
         run: |
-          pytest test_app.py
+          pytest -vv -s test_app.py
 
       - name: Show logs on failure
         if: failure()
         run: |
-          docker compose -f docker-compose.yml -f docker-compose.ci.yml logs
+          echo "===== CONTAINER STATUS ====="
+          docker compose -f docker-compose.yml -f docker-compose.ci.yml ps
+
+          echo "===== GARUD LOGS ====="
+          docker compose -f docker-compose.yml -f docker-compose.ci.yml logs --no-color
 
       - name: Stop Garud
         if: always()
