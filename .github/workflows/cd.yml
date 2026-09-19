@@ -6,94 +6,89 @@ on:
     types:
       - completed
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   deploy:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy Garud to EC2
-        uses: appleboy/ssh-action@v1.2.0
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
         with:
-          host: ${{ secrets.GARUD_HOST }}
-          username: ${{ secrets.GARUD_USER }}
-          key: ${{ secrets.GARUD_CD_KEY }}
-          script_stop: true
+          role-to-assume: arn:aws:iam::856021349263:role/Garud-GitHub-SSM-Role
+          aws-region: ${{ vars.AWS_REGION }}
 
-          script: |
-            set -e
+      - name: Deploy Garud through SSM
+        env:
+          INSTANCE_ID: ${{ vars.GARUD_INSTANCE_ID }}
+        run: |
+          set -e
 
-            cd ~/garud_core
+          COMMAND_ID=$(aws ssm send-command \
+            --instance-ids "$INSTANCE_ID" \
+            --document-name "AWS-RunShellScript" \
+            --parameters 'commands=[
+              "set -e",
+              "cd /home/ubuntu/garud_core",
+              "echo === Pull latest code ===",
+              "git pull --ff-only origin main",
+              "echo === Saving current images for rollback ===",
+              "docker tag garud-perimeter:latest garud-perimeter:rollback || true",
+              "docker tag garud-shield:latest garud-shield:rollback || true",
+              "echo === Building new images ===",
+              "docker build -t garud-perimeter:latest -f perimeter/Dockerfile .",
+              "docker build -t garud-shield:latest .",
+              "echo === Stopping old containers ===",
+              "docker rm -f garud-perimeter 2>/dev/null || true",
+              "docker rm -f garud-shield 2>/dev/null || true",
+              "echo === Starting new shield ===",
+              "docker run -d --name garud-shield --network host --env-file /home/ubuntu/garud_core/.env -v /home/ubuntu/garud_core/templates:/app/templates --restart no garud-shield:latest gunicorn --workers 3 --bind 127.0.0.1:8080 garud_web:app",
+              "echo === Starting new perimeter ===",
+              "docker run -d --name garud-perimeter --network host --env-file /home/ubuntu/garud_core/.env --restart always garud-perimeter:latest python perimeter_shield.py",
+              "echo === Waiting for application ===",
+              "sleep 5",
+              "echo === Running containers ===",
+              "docker ps --format table {{.Names}}\\t{{.Status}}",
+              "echo === Health check ===",
+              "curl -f http://127.0.0.1/",
+              "echo === Deployment successful ==="
+            ]' \
+            --query 'Command.CommandId' \
+            --output text)
 
-            echo "=== Pull latest code ==="
-            git pull origin main
+          echo "SSM Command ID: $COMMAND_ID"
 
-            echo "=== Saving current images for rollback ==="
-            docker tag garud-perimeter:latest garud-perimeter:rollback || true
-            docker tag garud-shield:latest garud-shield:rollback || true
+          for i in {1..30}; do
+            STATUS=$(aws ssm get-command-invocation \
+              --command-id "$COMMAND_ID" \
+              --instance-id "$INSTANCE_ID" \
+              --query 'Status' \
+              --output text)
 
-            echo "=== Building new images ==="
-            docker build -t garud-perimeter:latest -f perimeter/Dockerfile .
-            docker build -t garud-shield:latest .
+            echo "Deployment status: $STATUS"
 
-            rollback() {
-              echo "=== DEPLOYMENT FAILED: ROLLING BACK ==="
+            case "$STATUS" in
+              Success)
+                echo "Garud deployment successful."
+                exit 0
+                ;;
+              Failed|Cancelled|TimedOut|Cancelling)
+                echo "Garud deployment failed."
+                aws ssm get-command-invocation \
+                  --command-id "$COMMAND_ID" \
+                  --instance-id "$INSTANCE_ID" \
+                  --query '{Status:Status,Output:StandardOutputContent,Error:StandardErrorContent}' \
+                  --output yaml
+                exit 1
+                ;;
+            esac
 
-              docker rm -f garud-perimeter 2>/dev/null || true
-              docker rm -f garud-shield 2>/dev/null || true
+            sleep 10
+          done
 
-              docker run -d \
-                --name garud-shield \
-                --network host \
-                --env-file ~/garud_core/.env \
-                -v ~/garud_core/templates:/app/templates \
-                --restart no \
-                garud-shield:rollback \
-                gunicorn --workers 3 --bind 127.0.0.1:8080 garud_web:app
-
-              docker run -d \
-                --name garud-perimeter \
-                --network host \
-                --env-file ~/garud_core/.env \
-                --restart always \
-                garud-perimeter:rollback \
-                python perimeter_shield.py
-
-              echo "=== Rollback completed ==="
-            }
-
-            trap rollback ERR
-
-            echo "=== Stopping old containers ==="
-            docker rm -f garud-perimeter 2>/dev/null || true
-            docker rm -f garud-shield 2>/dev/null || true
-
-            echo "=== Starting new shield ==="
-            docker run -d \
-              --name garud-shield \
-              --network host \
-              --env-file ~/garud_core/.env \
-              -v ~/garud_core/templates:/app/templates \
-              --restart no \
-              garud-shield:latest \
-              gunicorn --workers 3 --bind 127.0.0.1:8080 garud_web:app
-
-            echo "=== Starting new perimeter ==="
-            docker run -d \
-              --name garud-perimeter \
-              --network host \
-              --env-file ~/garud_core/.env \
-              --restart always \
-              garud-perimeter:latest \
-              python perimeter_shield.py
-
-            echo "=== Waiting for application ==="
-            sleep 5
-
-            echo "=== Health check ==="
-            curl -f http://127.0.0.1/ 
-
-            trap - ERR
-
-            echo "=== Deployment successful ==="
-            docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}'
+          echo "Deployment timed out waiting for SSM."
+          exit 1
