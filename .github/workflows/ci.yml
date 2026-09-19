@@ -72,7 +72,7 @@ jobs:
           pytest -vv -s test_app.py
 
       - name: Install Trivy
-        uses: aquasecurity/setup-trivy@v0.2.3
+        uses: aquasecurity/trivy-action@0.33.1
 
       - name: Scan Garud perimeter image
         run: |
