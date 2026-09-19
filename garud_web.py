@@ -149,13 +149,20 @@ def garud_dashboard():
 def speak():
     data = request.get_json() or {}
     user_text = data.get('text', '').lower()
-    words = set(user_text.split())
-    audio_file_name = "default.mp3"
+    words = set("".join(c if c.isalnum() else " " for c in user_text).split())
 
-    if words & {"hello", "hi"}:
-        audio_file_name = "hello.mp3"
-    elif words & {"status", "server"}:
-        audio_file_name = "status.mp3"
+    voice_map = [
+        ({"hello", "hi", "hey"}, "hello.mp3"),
+        ({"status", "server", "system"}, "status.mp3"),
+        ({"attack", "attacks", "threat", "blocked", "banned", "ban"}, "attacks.mp3"),
+        ({"who", "yourself", "name", "introduce"}, "intro.mp3"),
+        ({"thanks", "thank", "bye", "goodbye"}, "bye.mp3"),
+    ]
+    audio_file_name = "default.mp3"
+    for keys, fname in voice_map:
+        if words & keys:
+            audio_file_name = fname
+            break
 
     audio_path = os.path.join(VOICE_FOLDER, audio_file_name)
     if not os.path.exists(audio_path):
