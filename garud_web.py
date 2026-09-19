@@ -149,16 +149,18 @@ def garud_dashboard():
 def speak():
     data = request.get_json() or {}
     user_text = data.get('text', '').lower()
+    words = set(user_text.split())
     audio_file_name = "default.mp3"
-    
-    if "hello" in user_text or "hi" in user_text:
+
+    if words & {"hello", "hi"}:
         audio_file_name = "hello.mp3"
-    elif "status" in user_text or "server" in user_text:
+    elif words & {"status", "server"}:
         audio_file_name = "status.mp3"
-        
+
     audio_path = os.path.join(VOICE_FOLDER, audio_file_name)
-    if os.path.exists(audio_path):
-        return send_file(audio_path, mimetype='audio/mpeg')
+    if not os.path.exists(audio_path):
         return jsonify({"status": "Voice file missing"}), 404
+    return send_file(audio_path, mimetype='audio/mpeg')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
