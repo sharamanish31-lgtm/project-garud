@@ -34,6 +34,10 @@ jobs:
         run: |
           docker compose -f docker-compose.yml -f docker-compose.ci.yml build
 
+      - name: Show Docker images
+        run: |
+          docker images
+
       - name: Start Garud
         run: |
           docker compose -f docker-compose.yml -f docker-compose.ci.yml up -d
