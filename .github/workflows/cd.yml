@@ -53,7 +53,7 @@ jobs:
               "echo === Waiting for application ===",
               "sleep 5",
               "echo === Running containers ===",
-              "docker ps --format table {{.Names}}\\t{{.Status}}",
+              "docker ps --format '{{.Names}}\\t{{.Status}}'",
               "echo === Health check ===",
               "curl -f http://127.0.0.1/",
               "echo === Deployment successful ==="
