@@ -17,3 +17,11 @@ __pycache__/
 perimeter/logs/*.jsonl
 data/
 logs/
+*.backup
+*.save
+*.save.*
+.pytest_cache/
+__pycache__/
+watchdog.log
+logs/
+data/
