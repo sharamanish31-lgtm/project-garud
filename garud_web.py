@@ -67,6 +67,9 @@ def async_pinecone_upsert(attacker_ip, user_agent, cloned_raw_payload, malicious
     except:
         pass
 
+import honeypot
+honeypot.register(app, dispatch_telegram_interactive_alert, bg_executor)
+
 @app.errorhandler(404)
 def autonomous_counter_strike(e):
     attacker_ip = request.remote_addr
