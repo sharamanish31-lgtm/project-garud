@@ -1,99 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROJECT GARUD : COGNITIVE INTERFACE</title>
-    <style>
-        body { margin: 0; background-color: #020208; color: #00f0ff; font-family: 'Courier New', monospace; overflow: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; }
-        #canvas { position: absolute; z-index: 1; top:0; left:0; }
-        .ui-overlay { position: absolute; z-index: 2; text-align: center; pointer-events: none; text-shadow: 0 0 10px #00f0ff; top: 15%; }
-        h1 { font-size: 1.5rem; letter-spacing: 4px; margin-bottom: 5px; }
-        .status-text { font-size: 0.8rem; color: #00aa33; font-weight: bold; margin-top: 10px; }
-        .terminal-log { position: absolute; z-index: 3; bottom: 25%; color: #00ff00; font-size: 0.9rem; text-shadow: 0 0 5px #00ff00; text-align: center; width: 85%; max-width: 450px; }
-        .mic-btn { position: absolute; z-index: 3; bottom: 10%; background: rgba(0,240,255,0.1); border: 2px solid #00f0ff; color: #00f0ff; padding: 15px 40px; cursor: pointer; font-size: 1rem; font-weight: bold; font-family: 'Courier New', monospace; box-shadow: 0 0 15px rgba(0,240,255,0.3); border-radius: 50px; text-transform: uppercase; transition: 0.3s; }
-        .mic-btn:hover { background: #00f0ff; color: #020208; box-shadow: 0 0 20px #00f0ff; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PROJECT GARUD : COGNITIVE INTERFACE</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;color:#00f0ff;font-family:'Courier New',monospace;background:radial-gradient(ellipse at 50% 45%,#06154f 0%,#030720 55%,#020208 100%)}
+#canvas{position:fixed;inset:0;z-index:1}
+.hud{position:fixed;z-index:2;pointer-events:none;text-shadow:0 0 8px #00f0ff;letter-spacing:2px}
+#tl{top:14px;left:14px;font-size:12px;font-weight:bold}
+#tl small{display:block;font-size:8px;opacity:.6;margin-top:3px;font-weight:normal}
+#tr{top:14px;right:14px;text-align:right;font-size:12px;font-weight:bold}
+#tr small{display:block;font-size:9px;opacity:.6;margin-top:3px;font-weight:normal}
+#mods{top:74px;right:12px;font-size:8px;line-height:13px;text-align:right;opacity:.85}
+#mods i{display:inline-block;width:5px;height:5px;border-radius:50%;background:#00ff9c;margin-left:6px;box-shadow:0 0 5px #00ff9c}
+#mods i.off{background:#ff4d5a;box-shadow:0 0 5px #ff4d5a}
+#sub{position:fixed;z-index:3;left:50%;transform:translateX(-50%);bottom:15%;width:88%;max-width:480px;text-align:center;font-size:14px;line-height:1.5;pointer-events:none}
+#sub .u{color:#7fb8ff;opacity:.85;font-size:12px}
+#sub .g{color:#eaffff;text-shadow:0 0 8px #00f0ff}
+#hint{position:fixed;z-index:3;bottom:5%;width:100%;text-align:center;font-size:10px;letter-spacing:2px;opacity:.5;pointer-events:none}
+#arm{position:fixed;z-index:10;inset:0;background:rgba(2,2,8,.92);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px}
+#arm h1{font-size:1.3rem;letter-spacing:6px;margin:0;text-shadow:0 0 12px #00f0ff}
+#armBtn{background:rgba(0,240,255,.1);border:2px solid #00f0ff;color:#00f0ff;padding:16px 38px;font:bold 1rem 'Courier New',monospace;border-radius:50px;box-shadow:0 0 18px rgba(0,240,255,.4);text-transform:uppercase}
+#armMsg{font-size:11px;opacity:.6;max-width:80%;text-align:center}
+</style>
 </head>
 <body>
+<canvas id="canvas"></canvas>
 
-    <div class="ui-overlay">
-        <h1>PROJECT GARUD</h1>
-        <div class="status-text" id="statusLine">SYSTEM NOMINAL : CORE ONLINE</div>
-    </div>
+<div class="hud" id="tl">G.A.R.U.D.<small>COGNITIVE CORE : CONNECTED</small></div>
+<div class="hud" id="tr"><span id="stateTxt">OFFLINE</span><small id="clock">--:--:--</small></div>
+<div class="hud" id="mods"></div>
+<div id="sub"></div>
+<div id="hint">SAY "HEY GARUD" OR CLAP TWICE</div>
 
-    <div class="terminal-log" id="logBox">TAP BUTTON TO ENGAGE VOICE CHANNEL</div>
-    <button class="mic-btn" id="micBtn">TAP TO TALK</button>
+<div id="arm">
+  <h1>PROJECT GARUD</h1>
+  <button id="armBtn">TAP TO ARM</button>
+  <div id="armMsg">Mic permission dena padega. Screen on rakhna.</div>
+</div>
 
-    <canvas id="canvas"></canvas>
+<script>
+/* ---------- STATE ---------- */
+let state='off';           // off | sleep | awake | busy
+let speaking=false, armed=false, paused=false, awakeTimer=null;
+const stateTxt=document.getElementById('stateTxt'), sub=document.getElementById('sub');
+const MODS=['PERIMETER','SHIELD','WATCHDOG','TELEGRAM','MEMORY','VOICE','WAKE WORD','CLAP SENSOR'];
+const modState={}; MODS.forEach(m=>modState[m]=true);
+modState['WAKE WORD']=false; modState['CLAP SENSOR']=false;
+function renderMods(){
+  document.getElementById('mods').innerHTML=MODS.map(m=>`${m}<i class="${modState[m]?'':'off'}"></i>`).join('<br>');
+}
+renderMods();
+function setState(s){
+  state=s;
+  const map={off:'OFFLINE',sleep:'SLEEPING',awake:'LISTENING',busy:speaking?'TRANSMITTING':'PROCESSING'};
+  stateTxt.textContent=map[s];
+  stateTxt.style.color = s==='awake' ? '#ffcc00' : '#00f0ff';
+}
+function setSub(u,g){
+  sub.innerHTML='';
+  if(u){const d=document.createElement('div');d.className='u';d.textContent='YOU: '+u;sub.appendChild(d);}
+  if(g){const d=document.createElement('div');d.className='g';d.textContent=g;sub.appendChild(d);}
+}
+setInterval(()=>{document.getElementById('clock').textContent=new Date().toLocaleTimeString('en-GB');},1000);
 
-    <script>
-        const canvas = document.getElementById('canvas'); const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth; canvas.height = window.innerHeight;
-        let particles = []; const numParticles = 140; const radius = 120;
-        for(let i=0; i<numParticles; i++) {
-            let angle = (i / numParticles) * Math.PI * 2;
-            particles.push({ baseAngle: angle, angle: angle, speed: 0.005 + Math.random() * 0.004, size: 2 + Math.random() * 2 });
-        }
+/* ---------- WAKE / SLEEP ---------- */
+function wake(src){
+  if(state!=='sleep') return;
+  setState('awake'); setSub('', 'Yes, Commander...');
+  clearTimeout(awakeTimer);
+  awakeTimer=setTimeout(()=>{ if(state==='awake'){ setState('sleep'); setSub('',''); } },9000);
+}
+function goSleep(){ setState('sleep'); }
 
-        window.isSpeaking = false; window.isListening = false;
-        const micBtn = document.getElementById('micBtn'); const logBox = document.getElementById('logBox'); const statusLine = document.getElementById('statusLine');
+/* ---------- SEND TO /speak (same as before) ---------- */
+async function send(text){
+  clearTimeout(awakeTimer);
+  setState('busy'); setSub(text,'PROCESSING...');
+  pauseRec();
+  try{
+    const response=await fetch('/speak',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text})});
+    if(!response.ok){ setSub(text,'Voice file missing in server folder.'); finish(); return; }
+    const garudText=response.headers.get('X-Garud-Response')||'Audio Transmitted';
+    setSub(text,'GARUD: '+garudText);
+    const blob=await response.blob(); const audio=new Audio(URL.createObjectURL(blob));
+    audio.onplay=()=>{speaking=true;setState('busy');};
+    audio.onended=()=>{speaking=false;finish();};
+    audio.onerror=()=>{speaking=false;finish();};
+    await audio.play();
+  }catch(e){ setSub(text,'Connection error.'); speaking=false; finish(); }
+}
+function finish(){
+  setTimeout(()=>{ goSleep(); resumeRec(); },600);
+  setTimeout(()=>{ if(state==='sleep') setSub('',''); },6000);
+}
 
-        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-        if (!SpeechRecognition) {
-            alert("Speech recognition not supported.");
-        } else {
-            const recognition = new SpeechRecognition();
-            recognition.lang = 'en-US'; recognition.interimResults = false;
+/* ---------- SPEECH RECOGNITION (always-on) ---------- */
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+const WAKE=/g[aeu]r+[uo]+d+a?|guru\s?d/i;
+const WAKE_G=/(hey|hi|ok|okay)?\s*(g[aeu]r+[uo]+d+a?|guru\s?d)[,.!?]*/gi;
+let rec=null;
+function startSafe(){ if(!SR||!armed||paused) return; try{rec.start();}catch(e){} }
+function pauseRec(){ paused=true; try{rec.abort();}catch(e){} }
+function resumeRec(){ paused=false; setTimeout(startSafe,300); }
+function initRec(){
+  if(!SR){ document.getElementById('armMsg').textContent='Speech recognition supported nahi hai.'; return false; }
+  rec=new SR(); rec.lang='en-IN'; rec.continuous=true; rec.interimResults=true;
+  rec.onresult=(e)=>{
+    if(state==='busy'||state==='off') return;
+    for(let i=e.resultIndex;i<e.results.length;i++){
+      const r=e.results[i], txt=r[0].transcript.trim();
+      if(state==='sleep' && WAKE.test(txt)) wake('voice');
+      if(state==='awake' && r.isFinal){
+        const cmd=txt.replace(WAKE_G,'').trim();
+        if(cmd.length>1) send(cmd);
+      }
+    }
+  };
+  rec.onerror=(e)=>{
+    if(e.error==='not-allowed'||e.error==='service-not-allowed'){
+      armed=false; modState['WAKE WORD']=false; renderMods(); setSub('','Mic permission blocked.');
+    }
+  };
+  rec.onend=()=>{ if(armed&&!paused) setTimeout(startSafe,250); };
+  modState['WAKE WORD']=true; renderMods();
+  return true;
+}
 
-            micBtn.addEventListener('click', () => { if(window.isSpeaking) return; recognition.start(); });
+/* ---------- CLAP DETECTOR ---------- */
+async function initClap(){
+  if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){
+    document.getElementById('hint').textContent='CLAP NEEDS HTTPS  |  SAY "HEY GARUD"';
+    return;
+  }
+  try{
+    const stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false}});
+    const ac=new (window.AudioContext||window.webkitAudioContext)(); await ac.resume();
+    const an=ac.createAnalyser(); an.fftSize=1024; ac.createMediaStreamSource(stream).connect(an);
+    const buf=new Uint8Array(an.fftSize);
+    let avg=0.02,lastSpike=0,firstClap=0;
+    const CLAP_MIN=0.35;
+    (function tick(){
+      an.getByteTimeDomainData(buf);
+      let peak=0; for(let i=0;i<buf.length;i++){const v=Math.abs(buf[i]-128)/128; if(v>peak)peak=v;}
+      const now=performance.now();
+      if(!speaking && state==='sleep' && peak>CLAP_MIN && peak>avg*4 && now-lastSpike>120){
+        lastSpike=now;
+        if(firstClap && now-firstClap<800){ firstClap=0; wake('clap'); } else firstClap=now;
+      }
+      avg=avg*0.95+peak*0.05;
+      requestAnimationFrame(tick);
+    })();
+    modState['CLAP SENSOR']=true; renderMods();
+  }catch(e){ document.getElementById('hint').textContent='CLAP MIC BLOCKED  |  SAY "HEY GARUD"'; }
+}
 
-            recognition.onstart = () => {
-                window.isListening = true; statusLine.innerText = "GARUD CORE: LISTENING..."; statusLine.style.color = "#ffcc00"; logBox.innerText = "Speak now, Commander...";
-            };
-            recognition.onerror = () => {
-                window.isListening = false; statusLine.innerText = "SYSTEM NOMINAL : CORE ONLINE"; statusLine.style.color = "#00aa33"; logBox.innerText = "Error capturing frequencies.";
-            };
-            recognition.onresult = async (event) => {
-                window.isListening = false; const userSpeech = event.results[0][0].transcript;
-                logBox.innerText = `YOU: "${userSpeech}"`; statusLine.innerText = "GARUD CORE: PROCESSING MATRIX..."; statusLine.style.color = "#00f0ff";
+/* ---------- ARM BUTTON ---------- */
+document.getElementById('armBtn').addEventListener('click',async()=>{
+  armed=true;
+  document.getElementById('arm').style.display='none';
+  setState('sleep');
+  await initClap();
+  if(initRec()) startSafe();
+});
+document.addEventListener('click',(e)=>{ if(e.target.id!=='armBtn') wake('tap'); });
 
-                const response = await fetch('/speak', {
-                    method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ text: userSpeech })
-                });
+/* ---------- BRAIN HUD ---------- */
+const cv=document.getElementById('canvas'), ctx=cv.getContext('2d');
+const COLORS=['255,80,90','255,190,60','170,90,255','60,255,170','60,170,255'];
+let W,H,R,nodes=[],tendrils=[],energy=0.25;
+function build(){
+  const dpr=Math.min(window.devicePixelRatio||1,2);
+  W=innerWidth; H=innerHeight; cv.width=W*dpr; cv.height=H*dpr;
+  cv.style.width=W+'px'; cv.style.height=H+'px'; ctx.setTransform(dpr,0,0,dpr,0,0);
+  R=Math.min(W,H)*0.3; nodes=[]; tendrils=[];
+  for(let i=0;i<80;i++){
+    const a=Math.random()*Math.PI*2, r=Math.sqrt(Math.random())*R;
+    nodes.push({a,r,ph:Math.random()*6.28,sp:0.3+Math.random()*0.6,s:1+Math.random()*1.6,
+      c:COLORS[Math.floor(a/(Math.PI*2)*COLORS.length)%COLORS.length]});
+  }
+  for(let i=0;i<30;i++){
+    tendrils.push({a:Math.random()*Math.PI*2,len:R*(0.5+Math.random()*1.4),bend:(Math.random()-.5)*1.4,
+      ph:Math.random()*6.28,c:COLORS[i%COLORS.length]});
+  }
+}
+build(); addEventListener('resize',build);
 
-                if(response.ok) {
-                    const garudText = response.headers.get('X-Garud-Response') || "Audio Transmitted";
-                    logBox.innerHTML = `YOU: "${userSpeech}"<br><span style="color:#00f0ff">GARUD: "${garudText}"</span>`;
-                    const blob = await response.blob(); const audioUrl = URL.createObjectURL(blob); const audio = new Audio(audioUrl);
-                    audio.onplay = () => { window.isSpeaking = true; statusLine.innerText = "GARUD CORE: TRANSMITTING AUDIO..."; statusLine.style.color = "#00f0ff"; };
-                    audio.onended = () => { window.isSpeaking = false; statusLine.innerText = "SYSTEM NOMINAL : CORE ONLINE"; statusLine.style.color = "#00aa33"; };
-                    audio.play();
-                } else { 
-                    logBox.innerText = "Voice file missing in server folder."; 
-                    statusLine.innerText = "SYSTEM NOMINAL : CORE ONLINE"; 
-                    statusLine.style.color = "#00aa33"; 
-                }
-            };
-        }
+function frame(ms){
+  const t=ms/1000;
+  const target = state==='awake'?1 : state==='busy'?1 : 0.25;
+  energy+=(target-energy)*0.05;
+  const pulse = speaking ? Math.sin(t*9)*0.07+0.07 : state==='awake' ? Math.sin(t*4)*0.03 : Math.sin(t*0.8)*0.015;
+  const cx=W/2, cy=H*0.45, k=1+pulse;
+  ctx.clearRect(0,0,W,H);
 
-        function animate() {
-            requestAnimationFrame(animate); ctx.fillStyle = 'rgba(2, 2, 8, 0.2)'; ctx.fillRect(0, 0, canvas.width, canvas.height);
-            const centerX = canvas.width / 2; const centerY = canvas.height / 2;
-            let pulse = 0; if (window.isSpeaking) pulse = Math.sin(Date.now() * 0.06) * 18 + 12; if (window.isListening) pulse = Math.sin(Date.now() * 0.02) * 5 + 3;
-            const currentRadius = radius + pulse;
-            ctx.beginPath(); ctx.arc(centerX, centerY, currentRadius + 25, 0, Math.PI * 2);
-            ctx.strokeStyle = window.isSpeaking ? 'rgba(0, 240, 255, 0.7)' : (window.isListening ? 'rgba(255, 200, 0, 0.5)' : 'rgba(0, 240, 255, 0.1)'); ctx.lineWidth = 2; ctx.stroke();
-            particles.forEach((p) => {
-                p.angle += p.speed; let modRadius = currentRadius + (Math.sin(p.angle * 5) * (pulse * 0.5));
-                let x = centerX + Math.cos(p.angle) * modRadius; let y = centerY + Math.sin(p.angle) * modRadius;
-                ctx.beginPath(); ctx.arc(x, y, p.size + (pulse/8), 0, Math.PI * 2); ctx.fillStyle = window.isListening ? '#ffcc00' : '#00f0ff';
-                ctx.shadowBlur = (window.isSpeaking || window.isListening) ? 22 : 8; ctx.shadowColor = window.isListening ? '#ffcc00' : '#00f0ff'; ctx.fill();
-            });
-            ctx.shadowBlur = 0;
-        }
-        animate();
-        window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
-    </script>
+  // core glow
+  const g=ctx.createRadialGradient(cx,cy,0,cx,cy,R*1.3*k);
+  g.addColorStop(0,`rgba(40,120,255,${0.10+0.30*energy})`); g.addColorStop(1,'rgba(40,120,255,0)');
+  ctx.fillStyle=g; ctx.beginPath(); ctx.arc(cx,cy,R*1.3*k,0,6.283); ctx.fill();
+
+  // tendrils
+  ctx.lineWidth=1;
+  tendrils.forEach(d=>{
+    const a=d.a+Math.sin(t*0.3+d.ph)*0.08, sx=cx+Math.cos(a)*R*0.9*k, sy=cy+Math.sin(a)*R*0.9*k;
+    const len=d.len*(0.8+0.4*energy), ex=cx+Math.cos(a+d.bend*0.3)*(R*0.9+len), ey=cy+Math.sin(a+d.bend*0.3)*(R*0.9+len);
+    const mx=cx+Math.cos(a+d.bend*0.6)*(R*0.9+len*0.5), my=cy+Math.sin(a+d.bend*0.6)*(R*0.9+len*0.5);
+    ctx.strokeStyle=`rgba(${d.c},${0.10+0.35*energy})`;
+    ctx.beginPath(); ctx.moveTo(sx,sy); ctx.quadraticCurveTo(mx,my,ex,ey); ctx.stroke();
+  });
+
+  // node positions
+  const P=nodes.map(n=>({
+    x:cx+Math.cos(n.a)*n.r*1.05*k+Math.sin(t*n.sp+n.ph)*6,
+    y:cy+Math.sin(n.a)*n.r*0.9*k+Math.cos(t*n.sp+n.ph)*6, c:n.c, s:n.s}));
+
+  // links
+  const maxD=R*0.42, maxD2=maxD*maxD;
+  for(let i=0;i<P.length;i++){
+    for(let j=i+1;j<P.length;j++){
+      const dx=P[i].x-P[j].x, dy=P[i].y-P[j].y, d2=dx*dx+dy*dy;
+      if(d2<maxD2){
+        const al=(1-Math.sqrt(d2)/maxD)*(0.10+0.40*energy);
+        ctx.strokeStyle=`rgba(${P[i].c},${al})`;
+        ctx.beginPath(); ctx.moveTo(P[i].x,P[i].y); ctx.lineTo(P[j].x,P[j].y); ctx.stroke();
+      }
+    }
+  }
+  // nodes (halo + core, no shadowBlur = fast on phones)
+  P.forEach(p=>{
+    ctx.fillStyle=`rgba(${p.c},${0.10+0.15*energy})`; ctx.beginPath(); ctx.arc(p.x,p.y,p.s*4,0,6.283); ctx.fill();
+    ctx.fillStyle=`rgba(${p.c},${0.5+0.5*energy})`; ctx.beginPath(); ctx.arc(p.x,p.y,p.s,0,6.283); ctx.fill();
+  });
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+</script>
 </body>
 </html>
