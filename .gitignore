@@ -15,3 +15,5 @@ __pycache__/
 *.save
 *.save.*
 perimeter/logs/*.jsonl
+data/
+logs/

@@ -7,6 +7,9 @@ services:
       context: .
       dockerfile: perimeter/Dockerfile
     container_name: garud-perimeter
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
     ports:
       - "80:80"  # बाहर की दुनिया के लिए सिर्फ यही खुला रहेगा
     env_file:

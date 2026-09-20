@@ -13,6 +13,9 @@ TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
 LOG_FILE = "/app/logs/perimeter_log.jsonl"
+DATA_DIR = os.environ.get("GARUD_DATA_DIR", "/app/data")
+BANS_FILE = os.path.join(DATA_DIR, "bans.json")
+OWNER_IPS = {i.strip() for i in os.environ.get("OWNER_IPS", "").split(",") if i.strip()}
 
 attack_history = {}
 MAX_ATTACKS = 3
@@ -38,7 +41,34 @@ def log_event(ip, path, action, extra=None):
     except Exception:
         pass
 
+def save_bans():
+    try:
+        os.makedirs(DATA_DIR, exist_ok=True)
+        now = time.time()
+        live = {k: v for k, v in attack_history.items() if not v[2] or v[2] > now}
+        tmp = BANS_FILE + ".tmp"
+        with open(tmp, "w") as f:
+            json.dump(live, f)
+        os.replace(tmp, BANS_FILE)
+    except Exception as e:
+        print(f"BANS SAVE ERROR: {e}")
+
+def load_bans():
+    try:
+        with open(BANS_FILE) as f:
+            data = json.load(f)
+        now = time.time()
+        for k, (count, first, until) in data.items():
+            if until is None or until > now:
+                attack_history[k] = (count, first, until)
+    except FileNotFoundError:
+        pass
+    except Exception as e:
+        print(f"BANS LOAD ERROR: {e}")
+
 def is_ip_banned(ip):
+    if ip in OWNER_IPS:
+        return False
     if ip in attack_history:
         count, first_seen, banned_until = attack_history[ip]
         if banned_until and time.time() < banned_until:
@@ -46,6 +76,8 @@ def is_ip_banned(ip):
     return False
 
 def record_attack(ip):
+    if ip in OWNER_IPS:
+        return 0
     now = time.time()
     if ip in attack_history:
         count, first_seen, banned_until = attack_history[ip]
@@ -55,9 +87,12 @@ def record_attack(ip):
         attack_history[ip] = (count, first_seen, banned_until)
     else:
         attack_history[ip] = (1, now, None)
+    save_bans()
     return attack_history[ip][0]
 
 def is_rate_limited(ip):
+    if ip in OWNER_IPS:
+        return False
     now = time.time()
     timestamps = [t for t in request_log.get(ip, []) if now - t < RATE_LIMIT_WINDOW]
     timestamps.append(now)
@@ -138,6 +173,7 @@ class ThreadedServer(socketserver.ThreadingMixIn, socketserver.TCPServer):
     allow_reuse_address = True
     daemon_threads = True
 
+load_bans()
 with ThreadedServer(("", PORT), PerimeterHandler) as httpd:
     print(f"Garud Perimeter Active on Port {PORT}")
     httpd.serve_forever()
