@@ -1,6 +1,7 @@
 import http.server
 import socketserver
 import urllib.request
+import urllib.error
 import urllib.parse
 import os
 import time
@@ -37,6 +38,18 @@ def log_event(ip, path, action, extra=None):
     try:
         os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
         with open(LOG_FILE, "a") as f:
+            f.write(json.dumps(entry) + "\n")
+    except Exception:
+        pass
+
+def save_candidate(ip, path):
+    try:
+        os.makedirs(DATA_DIR, exist_ok=True)
+        fp = os.path.join(DATA_DIR, "candidates.jsonl")
+        if os.path.exists(fp) and os.path.getsize(fp) > 5_000_000:
+            return
+        entry = {"time": time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime()), "ip": ip, "path": path[:200]}
+        with open(fp, "a") as f:
             f.write(json.dumps(entry) + "\n")
     except Exception:
         pass
@@ -163,6 +176,16 @@ class PerimeterHandler(http.server.BaseHTTPRequestHandler):
                 self.end_headers()
                 self.wfile.write(body)
             log_event(client_ip, path, "allowed")
+        except urllib.error.HTTPError as e:
+            err_body = e.read()
+            self.send_response(e.code)
+            self.send_header("Content-Type", e.headers.get("Content-Type", "text/plain"))
+            self.send_header("Content-Length", str(len(err_body)))
+            self.end_headers()
+            self.wfile.write(err_body)
+            log_event(client_ip, path, "backend_status", {"status": e.code})
+            if e.code == 404 and client_ip not in OWNER_IPS:
+                save_candidate(client_ip, path)
         except Exception as e:
             log_event(client_ip, path, "backend_error", {"error": str(e)})
             self.send_response(500)

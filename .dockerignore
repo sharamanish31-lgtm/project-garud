@@ -1,0 +1,9 @@
+.env
+.git
+data/
+logs/
+*.png
+*.bak*
+*.save*
+watchdog.log
+__pycache__/
