@@ -1,2 +1,6 @@
-# Production overlay: intentionally empty, avoids ci.yml's blank Telegram/Pinecone env vars
-services: {}
+services:
+  garud-perimeter:
+    environment:
+      TARGET_INTERNAL_APP: http://garud-shield:8080
+  garud-shield:
+    command: ["gunicorn", "--workers", "3", "--bind", "0.0.0.0:8080", "garud_web:app"]
