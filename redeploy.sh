@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ~/garud_core
-C="docker compose -f docker-compose.yml -f docker-compose.ci.yml"
+C="docker compose -f docker-compose.yml -f docker-compose.prod.yml"
 trap 'crontab -l | sed "s|^#\(\*/2.*watchdog.sh.*\)|\1|" | crontab -; crontab -l | tail -1' EXIT
 crontab -l | sed 's|^\(\*/2.*watchdog.sh.*\)|#\1|' | crontab -
 $C build || { echo "BUILD FAILED"; exit 1; }

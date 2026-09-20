@@ -1,0 +1,2 @@
+# Production overlay: intentionally empty, avoids ci.yml's blank Telegram/Pinecone env vars
+services: {}

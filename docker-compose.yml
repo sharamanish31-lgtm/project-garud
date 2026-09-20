@@ -4,8 +4,8 @@ services:
   # Layer 1: बाहरी सुरक्षा कवच (Perimeter Shield) जो सीधे Port 80 पर बैठेगा
   garud-perimeter:
     build:
-      context: .
-      dockerfile: perimeter/Dockerfile
+      context: ./perimeter
+      dockerfile: Dockerfile
     container_name: garud-perimeter
     volumes:
       - ./data:/app/data

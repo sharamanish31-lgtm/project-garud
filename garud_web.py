@@ -26,7 +26,7 @@ CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 def dispatch_telegram_interactive_alert(attacker_ip, malicious_path, cloned_raw_payload):
     if not BOT_TOKEN or not CHAT_ID: return
-    url = f"https://telegram.org{BOT_TOKEN}/sendMessage"
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
     text_payload = (
         f"🚨 *GARUD TARGET INTERCEPTED* 🚨\n\n"
         f"👤 *Source Node:* `{attacker_ip}`\n"
@@ -131,7 +131,7 @@ def telegram_webhook_callback():
         action, target_ip = callback_data.split("_", 1)
         INTERACTIVE_DECISION_MAP[target_ip] = action
         callback_id = data["callback_query"]["id"]
-        requests.post(f"https://telegram.org{BOT_TOKEN}/answerCallbackQuery", json={
+        requests.post(f"https://api.telegram.org/bot{BOT_TOKEN}/answerCallbackQuery", json={
             "callback_query_id": callback_id,
             "text": f"Garud Order Executed: {action.upper()} activated against node."
         })
