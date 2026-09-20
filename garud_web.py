@@ -37,7 +37,6 @@ def dispatch_telegram_interactive_alert(attacker_ip, malicious_path, cloned_raw_
     )
     reply_markup = {
         "inline_keyboard": [[
-            {"text": "💥 LAUNCH BOMB", "callback_data": f"bomb_{attacker_ip}"},
             {"text": "🕸️ STICKY TRAP", "callback_data": f"tarpit_{attacker_ip}"}
         ]]
     }
@@ -100,7 +99,11 @@ def autonomous_counter_strike(e):
     bg_executor.submit(async_pinecone_upsert, attacker_ip, user_agent, cloned_raw_payload, malicious_path, live_calculated_vector)
     
     time.sleep(0.01)
-    selected_posture = INTERACTIVE_DECISION_MAP.get(attacker_ip, "tarpit")
+    _entry = INTERACTIVE_DECISION_MAP.get(attacker_ip)
+    if _entry and time.time() - _entry[1] < 600:
+        selected_posture = _entry[0]
+    else:
+        selected_posture = "tarpit"
 
     if selected_posture == "bomb":
         import gzip
@@ -129,7 +132,7 @@ def telegram_webhook_callback():
     if "callback_query" in data:
         callback_data = data["callback_query"]["data"]
         action, target_ip = callback_data.split("_", 1)
-        INTERACTIVE_DECISION_MAP[target_ip] = action
+        INTERACTIVE_DECISION_MAP[target_ip] = (action, time.time())
         callback_id = data["callback_query"]["id"]
         requests.post(f"https://api.telegram.org/bot{BOT_TOKEN}/answerCallbackQuery", json={
             "callback_query_id": callback_id,
