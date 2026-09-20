@@ -1,8 +1,6 @@
 import os
 import json
 import time
-import gzip
-import io
 import requests
 from flask import Flask, render_template, request, jsonify, send_file, make_response
 from pinecone import Pinecone
@@ -108,26 +106,11 @@ def autonomous_counter_strike(e):
     else:
         selected_posture = "tarpit"
 
-    if selected_posture == "bomb":
-        import gzip
-        import io
-        from flask import make_response
-        raw_garbage = ("0xDEADBEEF_GARUD_CORE_SECURITY_MATRIX_" * 40000).encode('utf-8')
-        out = io.BytesIO()
-        with gzip.GzipFile(fileobj=out, mode="w") as f:
-            f.write(raw_garbage)
-        compressed_data = out.getvalue()
-        response = make_response(compressed_data)
-        response.headers["Content-Encoding"] = "gzip"
-        response.headers["Content-Type"] = "text/plain"
-        response.headers["Content-Length"] = str(len(compressed_data))
-        return response, 200
-    else:
-        def generate_slow_stream():
-            for _ in range(5):
-                yield b" "  
-                time.sleep(1)
-        return app.response_class(generate_slow_stream(), content_type="text/plain", status=200)
+    def generate_slow_stream():
+        for _ in range(5):
+            yield b" "  
+            time.sleep(1)
+    return app.response_class(generate_slow_stream(), content_type="text/plain", status=200)
 
 @app.route('/telegram-callback', methods=['POST'])
 def telegram_webhook_callback():
